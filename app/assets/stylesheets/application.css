@@ -11,3 +11,13 @@
  *= require_self
  *= require_tree .
  */
+
+@import "twitter/bootstrap/bootstrap";
+@import "twitter/bootstrap/responsive";
+
+/* need to do this in the bootstrap way! */
+
+.logo {
+    padding-top: 25%;
+}
+

@@ -1,8 +1,9 @@
 Jobshadow::Application.routes.draw do
-  resources :users
-
-  resources :programs
-
+  
+  root 'static_pages#home'
+  match '/students', to: 'static_pages#students', via: 'get'
+  match '/professionals', to: 'static_pages#professionals', via: 'get'
+  match '/administrators', to: 'static_pages#administrators', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

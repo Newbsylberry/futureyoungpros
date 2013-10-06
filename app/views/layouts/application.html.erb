@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Jobshadow</title>
+  <title><%= full_title(yield(:title)) %></title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render 'layouts/header' %>
+  <div class="container">    
+  <div class="row"> 
+      <div class="span9">
+	  <%= yield %>
+      </div>
+      <div class="span3">
+	<h1>Sign Up Button!</h1>
+      </div>
+  </div>
+  <div class="row">
+      <div class="span3 offset9">
+	<%= render 'layouts/sidelogos' %>
+      </div>
+  </div>
+  </div>
 </body>
 </html>
