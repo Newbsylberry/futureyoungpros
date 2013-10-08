@@ -12,8 +12,14 @@
  *= require_tree .
  */
 
-@import "twitter/bootstrap/bootstrap";
-@import "twitter/bootstrap/responsive";
+*= require twitter/bootstrap
+
+
+
+@import "twitter/bootstrap";
+@import "twitter/responsive";
+
+
 
 /* need to do this in the bootstrap way! */
 
