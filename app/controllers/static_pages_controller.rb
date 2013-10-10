@@ -10,4 +10,11 @@ class StaticPagesController < ApplicationController
 
   def administrators
   end
+
+  def businesses
+  end
+
+  def schools
+  end
+
 end
