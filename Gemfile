@@ -17,9 +17,8 @@ gem 'rails_12factor', group: :production
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 gem 'sass'
-gem 'anjlab-bootstrap-rails', :require => 'bootstrap-rails',
-    			      :github => 'anjlab/bootstrap-rails',
-			      :branch => '3.0.0'
+gem 'bootstrap-sass-rails'
+gem 'font-awesome-sass-rails'
 gem 'therubyracer'
 gem 'less-rails'
 gem 'coffee-rails', '~> 4.0.0'

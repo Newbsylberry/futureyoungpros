@@ -1,12 +1,14 @@
 <header>
 <h3 class="text-muted">Future 40Below'er Program</h3>  
-   <ul class="nav nav-pills">
-     <li><%= link_to "Home", root_path %></li>
-     <li><%= link_to "Students", students_path %></li>
-     <li><%= link_to "Professionals", professionals_path %></li>
-     <li><%= link_to "Administrators", administrators_path %></li>
-     <button type="button" class="btn btn-primary btn-lg pull-right">Sign Up!</button>
-   </ul>
+  <div class="tabbable"> <!-- Only required for left/right tabs -->
+    <ul class="nav nav-tabs">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "Students", students_path %></li>
+      <li><%= link_to "Professionals", professionals_path %></li>
+      <li><%= link_to "Administrators", administrators_path %></li>
+      <button type="button" class="btn btn-primary btn-lg pull-right">Sign Up!</button>
+    </ul>
+  </div>
 <header>
   
 

@@ -10,13 +10,15 @@
  *
  *= require_self
  *= require_tree .
- *= require bootstrap
  */
 
+*= require twitter/bootstrap
 
-
-
-
+@import "twitter/responsive";
+@import "twitter/bootstrap";
+@import "font-awesome";
+body { padding-top: 60px; }
+@import "bootstrap-responsive";
 
 
 /* need to do this in the bootstrap way! */
