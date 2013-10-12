@@ -1,0 +1,39 @@
+<h1>Listing mous</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>Phone</th>
+      <th>Jobtitle</th>
+      <th>Duration</th>
+      <th>Availability</th>
+      <th>Considerations</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @mous.each do |mou| %>
+      <tr>
+        <td><%= mou.firstName %></td>
+        <td><%= mou.lastName %></td>
+        <td><%= mou.phone %></td>
+        <td><%= mou.jobTitle %></td>
+        <td><%= mou.duration %></td>
+        <td><%= mou.availability %></td>
+        <td><%= mou.considerations %></td>
+        <td><%= link_to 'Show', mou %></td>
+        <td><%= link_to 'Edit', edit_mou_path(mou) %></td>
+        <td><%= link_to 'Destroy', mou, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Mou', new_mou_path %>

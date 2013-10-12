@@ -1,0 +1,45 @@
+<%= form_for(@mou) do |f| %>
+  <% if @mou.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@mou.errors.count, "error") %> prohibited this mou from being saved:</h2>
+
+      <ul>
+      <% @mou.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :firstName %><br>
+    <%= f.text_field :firstName %>
+  </div>
+  <div class="field">
+    <%= f.label :lastName %><br>
+    <%= f.text_field :lastName %>
+  </div>
+  <div class="field">
+    <%= f.label :phone %><br>
+    <%= f.text_field :phone %>
+  </div>
+  <div class="field">
+    <%= f.label :jobTitle %><br>
+    <%= f.text_field :jobTitle %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br>
+    <%= f.text_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :availability %><br>
+    <%= f.date_select :availability %>
+  </div>
+  <div class="field">
+    <%= f.label :considerations %><br>
+    <%= f.text_field :considerations %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

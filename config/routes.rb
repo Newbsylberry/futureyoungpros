@@ -1,5 +1,7 @@
 Jobshadow::Application.routes.draw do
   
+  resources :mous
+
   devise_for :users
   root 'static_pages#home'
   match '/students', to: 'static_pages#students', via: 'get'

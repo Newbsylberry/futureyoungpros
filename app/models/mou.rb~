@@ -1,0 +1,2 @@
+class Mou < ActiveRecord::Base
+end

@@ -1,0 +1,2 @@
+module MoUsHelper
+end

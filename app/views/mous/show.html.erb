@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Firstname:</strong>
+  <%= @mou.firstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @mou.lastName %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @mou.phone %>
+</p>
+
+<p>
+  <strong>Jobtitle:</strong>
+  <%= @mou.jobTitle %>
+</p>
+
+<p>
+  <strong>Duration:</strong>
+  <%= @mou.duration %>
+</p>
+
+<p>
+  <strong>Availability:</strong>
+  <%= @mou.availability %>
+</p>
+
+<p>
+  <strong>Considerations:</strong>
+  <%= @mou.considerations %>
+</p>
+
+<%= link_to 'Edit', edit_mou_path(@mou) %> |
+<%= link_to 'Back', mous_path %>
