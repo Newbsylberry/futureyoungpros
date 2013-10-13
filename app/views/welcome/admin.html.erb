@@ -1,8 +1,15 @@
 
-
+<% @user = User.find(current_user)
+   if @user.role == 'admin' %>
 
 <%= link_to 'New Mou', new_mou_path %>
 
 <%= link_to "Submitted MOU's", mous_path %>
 
 <%= link_to "User Registration", new_user_registration_path %>
+
+<% else %>
+
+<h1>GET OUT OF MY ROOOOOOOM!</h1>
+
+<% end %>

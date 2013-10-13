@@ -1,3 +1,6 @@
+<% @user = User.find(current_user)
+   if @user.role == 'admin' %>
+
 <h1>Listing mous</h1>
 
 <table>
@@ -37,3 +40,9 @@
 <br>
 
 <%= link_to 'New Mou', new_mou_path %>
+
+<% else %>
+
+<h1>Stop poking around</h1>
+
+<% end %>
