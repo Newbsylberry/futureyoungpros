@@ -1,6 +1,8 @@
 class User < ActiveRecord::Base
+  ROLES = %w[admin professional student]
+ 
   has_many :mous
-  easy_roles :roles_mask, method: :bitmask
+  
   
 
   # Include default devise modules. Others available are:
@@ -9,7 +11,5 @@ class User < ActiveRecord::Base
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
  
-
-  ROLES_MASK = %w[admin professional student]
 
 end

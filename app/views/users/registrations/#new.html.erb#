@@ -5,7 +5,7 @@
 
   <div>
   <h3>I Am A</h3>
-    <%= f.select_tag(:roles, options_for_select([['professional'], ['student']])) %>
+    <%= f.collection_select :role, options_for_select([['professional'], ['student']])) %>
   </div>
   <br />
 
