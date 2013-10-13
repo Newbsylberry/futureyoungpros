@@ -5,7 +5,11 @@
 
   <div>
   <h3>I Am A</h3>
+<<<<<<< HEAD
     <%= f.select_tag :role, 'professional', 'student' %>
+=======
+    <%= select_tag(:roles, options_for_select([['professional'], ['student']])) %>
+>>>>>>> parent of 2361328... created role column set default to professional
   </div>
   <br />
 

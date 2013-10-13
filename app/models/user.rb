@@ -13,7 +13,11 @@ class User < ActiveRecord::Base
  
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   
+=======
+  ROLES_MASK = %w[admin professional student]
+>>>>>>> parent of 2361328... created role column set default to professional
 
 =======
 >>>>>>> cancan
