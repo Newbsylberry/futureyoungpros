@@ -10,6 +10,6 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
  
 
-  ROLES_MASK = %w[admin professional student]
+  
 
 end

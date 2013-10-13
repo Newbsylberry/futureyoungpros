@@ -11,10 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131012231512) do
+ActiveRecord::Schema.define(version: 20131013163529) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "admins", force: true do |t|
+    t.string   "name"
+    t.integer  "resource_id"
+    t.string   "resource_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "admins", ["name", "resource_type", "resource_id"], name: "index_admins_on_name_and_resource_type_and_resource_id", using: :btree
+  add_index "admins", ["name"], name: "index_admins_on_name", using: :btree
 
   create_table "mous", force: true do |t|
     t.string   "firstName"
@@ -29,6 +40,17 @@ ActiveRecord::Schema.define(version: 20131012231512) do
     t.datetime "updated_at"
   end
 
+  create_table "professionals", force: true do |t|
+    t.string   "name"
+    t.integer  "resource_id"
+    t.string   "resource_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "professionals", ["name", "resource_type", "resource_id"], name: "index_professionals_on_name_and_resource_type_and_resource_id", using: :btree
+  add_index "professionals", ["name"], name: "index_professionals_on_name", using: :btree
+
   create_table "programs", force: true do |t|
     t.string   "name"
     t.string   "location"
@@ -36,9 +58,21 @@ ActiveRecord::Schema.define(version: 20131012231512) do
     t.datetime "updated_at"
   end
 
+  create_table "students", force: true do |t|
+    t.string   "name"
+    t.integer  "resource_id"
+    t.string   "resource_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "students", ["name", "resource_type", "resource_id"], name: "index_students_on_name_and_resource_type_and_resource_id", using: :btree
+  add_index "students", ["name"], name: "index_students_on_name", using: :btree
+
   create_table "users", force: true do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                  default: "",             null: false
+    t.string   "encrypted_password",     default: "",             null: false
+    t.string   "role",                   default: "professional", null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -49,10 +83,30 @@ ActiveRecord::Schema.define(version: 20131012231512) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "roles",                  default: 0
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "users_admins", id: false, force: true do |t|
+    t.integer "user_id"
+    t.integer "admin_id"
+  end
+
+  add_index "users_admins", ["user_id", "admin_id"], name: "index_users_admins_on_user_id_and_admin_id", using: :btree
+
+  create_table "users_professionals", id: false, force: true do |t|
+    t.integer "user_id"
+    t.integer "professional_id"
+  end
+
+  add_index "users_professionals", ["user_id", "professional_id"], name: "index_users_professionals_on_user_id_and_professional_id", using: :btree
+
+  create_table "users_students", id: false, force: true do |t|
+    t.integer "user_id"
+    t.integer "student_id"
+  end
+
+  add_index "users_students", ["user_id", "student_id"], name: "index_users_students_on_user_id_and_student_id", using: :btree
 
 end
