@@ -4,9 +4,10 @@
   <%= devise_error_messages! %>
 
   <div>
-  <h1>I Am A</h1>
+  <h3>I Am A</h3>
     <%= select_tag(:roles, options_for_select([['professional'], ['student']])) %>
   </div>
+  <br />
 
   <div><%= f.label :email %><br />
   <%= f.email_field :email, :autofocus => true %></div>

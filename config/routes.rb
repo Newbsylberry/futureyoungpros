@@ -1,5 +1,8 @@
 Jobshadow::Application.routes.draw do
   
+  get "welcome/admin"
+  get "welcome/professional"
+  get "welcome/student"
   resources :mous
 
   devise_for :users
