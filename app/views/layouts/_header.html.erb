@@ -15,6 +15,17 @@
 	   <% if user_signed_in? %>
              <button type="button" class="btn pullright">
 	     <%= link_to "Sign Out", destroy_user_session_path, :method => :delete %></button>
+	       <% @role = current_user.role
+		  if @role == 'admin' %>
+	       <button type="button" class="btn pullright">
+		 <%= link_to "Admin Home", welcome_admin_path %>
+	       </button>
+	     <% elsif @role == 'professional' %>
+	     
+	     <button type="button" class="btn pullright">
+	       <%= link_to "Professional Home", welcome_professional_path %>
+	     </button>
+	       <% end %>
 	     <%= current_user.email %>
 	   <% else %>
 	   <button type="button" class="btn pull-right">
