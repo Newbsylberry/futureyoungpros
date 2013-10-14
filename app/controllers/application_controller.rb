@@ -9,6 +9,8 @@ class ApplicationController < ActionController::Base
       welcome_professional_path
     elsif @role == 'admin'
       welcome_admin_path
+    elsif @role == 'student'
+      root_path
     end
   end
 
