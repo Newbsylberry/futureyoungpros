@@ -1,4 +1,5 @@
-
+<% @role = current_user.role
+   if @mou.user_id == current_user.id or @role == 'admin' %>
 
 <p id="notice"><%= notice %></p>
 
@@ -37,8 +38,13 @@
   <%= @mou.considerations %>
 </p>
 
-<% @role = current_user.role 
-   if @role == 'professional' %>
+<% else %>
+
+<h1>Whoops</h1>
+
+<% end %>
+
+<%  if @role == 'professional' %>
 <%= link_to 'Edit', edit_mou_path(@mou) %> |
 <%= link_to 'Home', welcome_professional_path %>
 
@@ -49,3 +55,4 @@
 <%= link_to 'home', welcome_admin_path %>
 
 <% end %>
+
