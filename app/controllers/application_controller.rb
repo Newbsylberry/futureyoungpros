@@ -4,10 +4,10 @@ class ApplicationController < ActionController::Base
   # For APIs, you may want to use :null_session instead.
 
   def after_sign_in_path_for(resource)
-    @user = current_user
-    if @user.role == 'professional'
+    @role = current_user.role
+    if @role == 'professional'
       welcome_professional_path
-    elsif @user.role == 'admin'
+    elsif @role == 'admin'
       welcome_admin_path
     end
   end
