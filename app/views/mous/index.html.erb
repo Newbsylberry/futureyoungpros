@@ -10,6 +10,7 @@
       <th>Firstname</th>
       <th>Lastname</th>
       <th>Phone</th>
+      <th>Category</th>
       <th>Jobtitle</th>
       <th>Duration</th>
       <th></th>
@@ -24,7 +25,8 @@
         <td><%= mou.firstName %></td>
         <td><%= mou.lastName %></td>
         <td><%= mou.phone %></td>
-        <td><%= mou.jobTitle %></td>
+        <td><%= mou.category.name if mou.category %></td>
+	<td><%= mou.jobTitle %></td>
         <td><%= mou.duration %></td>
         <td><%= link_to 'Show', mou %></td>
         <td><%= link_to 'Edit', edit_mou_path(mou) %></td>
@@ -37,7 +39,7 @@
 <br>
 
 <%= link_to 'New Mou', new_mou_path %>
-
+<%= link_to 'Home Page', welcome_admin_path %>
 <% else %>
 
 <h1>Stop poking around</h1>

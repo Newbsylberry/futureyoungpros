@@ -10,6 +10,7 @@ class MousController < ApplicationController
   # GET /mous/1
   # GET /mous/1.json
   def show
+ 
   end
 
   # GET /mous/new
@@ -70,6 +71,8 @@ class MousController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mou_params
-      params.require(:mou).permit(:firstName, :lastName, :phone, :jobTitle, :duration, :availability, :considerations)
+      params.require(:mou).permit(:firstName, :lastName, :phone, :jobTitle, 
+                                  :duration, :availability, :considerations,
+                                  :category_id)
     end
 end

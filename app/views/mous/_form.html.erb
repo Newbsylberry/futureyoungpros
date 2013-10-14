@@ -1,50 +1,75 @@
-<%= form_for(@mou) do |f| %>
-  <% if @mou.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@mou.errors.count, "error") %> prohibited this mou from being saved:</h2>
+<div class="row">
+  <div class="col-xs-12 col-md-4">
+    <br>
+      <%= form_for(@mou) do |f| %>
+      <% if @mou.errors.any? %>
+        <div id="error_explanation">
+	  <h2><%= pluralize(@mou.errors.count, "error") %> prohibited this mou from being saved:</h2>
+	  <ul>
+	    <% @mou.errors.full_messages.each do |msg| %>
+	    <li><%= msg %></li>
+	    <% end %>
+	  </ul>
+	</div>
+	<% end %>
 
-      <ul>
-      <% @mou.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
 
-  <div class="field">
-    <%= f.label :firstName %><br>
-    <%= f.text_field :firstName %>
-  </div>
-  <div class="field">
-    <%= f.label :lastName %><br>
-    <%= f.text_field :lastName %>
-  </div>
-  <div class="field">
-    <%= f.label :phone %><br>
-    <%= f.text_field :phone %>
-  </div>
-  <div class="field">
-    <%= f.label :category_id %><br>
-    <%= f.collection_select :category_id, Category.all, :id, :name %>
-    </div>
+	<div class="field">
+	  <%= f.label :firstName %><br>
+	  <%= f.text_field :firstName %>
+	</div>
+	<div class="field">
+	  <%= f.label :lastName %><br>
+	  <%= f.text_field :lastName %>
+	</div>
+	<div class="field">
+	  <%= f.label :phone %><br>
+	  <%= f.text_field :phone %>
+	</div>
+	<div class="field">
+	  <%= f.label :category_id %><br>
+	  <%= f.collection_select(:category_id, Category.all, :id, :name) %>
+	</div>
   
-  <div class="field">
-    <%= f.label :jobTitle %><br>
-    <%= f.text_field :jobTitle %>
+	<div class="field">
+	  <%= f.label :jobTitle %><br>
+	  <%= f.text_field :jobTitle %>
+	</div>
+	<div class="field">
+	  <%= f.label :duration %><br>
+	  <%= f.text_field :duration %>
+	</div>
+	<div class="field">
+	  <%= f.label :availability %><br>
+	  <%= f.date_select :availability %>
+	</div>
+	<div class="field">
+	  <%= f.label :considerations %><br>
+	  <%= f.text_field :considerations %>
+	</div>
+	<div class="actions">
+	  <%= f.submit %>
+	</div>
   </div>
-  <div class="field">
-    <%= f.label :duration %><br>
-    <%= f.text_field :duration %>
+  <div class="col-xs-12 col-md-4">
+    <div class"mou_image">
+      <%= image_tag("mou.jpg", :class => "image-response", :alt => "MOU") %>
+    </div>
+    <div>
+      <h3>By clicking submit you understand that:</h3>
+      <p>* Students are to be provided with field experiences</p>
+      <p>* Students are not expected to perform tasks, simply observe</p>
+      <p>* Students should be prepared for job or site specific information</p>
+      <p>* Hosts are encouraged to be very explicit and genuine in expressing 
+	all aspects of career<p>
+      <p>* Please refer to information on site_url on do's and do not's for hosting</p>
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :availability %><br>
-    <%= f.date_select :availability %>
+  <div class="col-xs-12 col-md-4">
   </div>
-  <div class="field">
-    <%= f.label :considerations %><br>
-    <%= f.text_field :considerations %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+</div>
+  
+
+    
+
 <% end %>

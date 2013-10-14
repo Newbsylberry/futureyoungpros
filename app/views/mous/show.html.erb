@@ -1,3 +1,5 @@
+
+
 <p id="notice"><%= notice %></p>
 
 <p>
@@ -35,5 +37,15 @@
   <%= @mou.considerations %>
 </p>
 
+<% @role = current_user.role 
+   if @role == 'professional' %>
 <%= link_to 'Edit', edit_mou_path(@mou) %> |
 <%= link_to 'Home', welcome_professional_path %>
+
+<% elsif @role == 'admin' %>
+
+<%= link_to 'edit', edit_mou_path(@mou) %>
+<%= link_to "submitted MOU's", mous_path %>
+<%= link_to 'home', welcome_admin_path %>
+
+<% end %>
