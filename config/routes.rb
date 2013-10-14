@@ -1,5 +1,7 @@
 Jobshadow::Application.routes.draw do
   
+  resources :categories
+
   get "welcome/admin"
   get "welcome/professional"
   get "welcome/student"

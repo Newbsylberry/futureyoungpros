@@ -1,0 +1,13 @@
+<% @role = current_user.role
+   if @role == "admin" %>
+<h1>New category</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', categories_path %>
+
+  <% else %>
+
+<h1>Leave</h1>
+
+<% end %>
