@@ -13,18 +13,18 @@
       </div>
     <div class="col-xs-6 col-sm-3 col-lg-2">
 	   <% if user_signed_in? %>
-             <%= button_to "Sign Out", destroy_user_session_path, :method => :delete, class: "btn pullright"  %>
+             <%= button_to "Sign Out", destroy_user_session_path, :method => :delete, class: "btn btn-large btn-primary"  %>
 	       <% @role = current_user.role
 		  if @role == 'admin' %>
-	       <%= button_to "Admin Home", welcome_admin_path, :method => :get, class: "btn pullright" %>
+	       <%= button_to "Admin Home", welcome_admin_path, :method => :get, class: "btn btn-large btn-primary" %>
 	     <% elsif @role == 'professional' %>
 	     
-	     <%= button_to "Professional Home", welcome_professional_path, :method => :get, class: "btn pullright" %>
+	     <%= button_to "Professional Home", welcome_professional_path, :method => :get, class: "btn btn-large btn-primary" %>
 	       <% end %>
 	     <%= current_user.email %>
 	   <% else %>
-	   <%= button_to "Sign up!", new_user_registration_path, :method => :get, class: "btn pull-right" %>
-	   <%= button_to "Sign in!", new_user_session_path, :method => :get, class: "btn pull-right" %>
+	   <%= button_to "Sign up", new_user_registration_path, :method => :get, class: "btn btn-primary" %>
+	   <%= button_to "Sign in", new_user_session_path, :method => :get, class: "btn btn-primary" %>
 	   <% end %>
     </div>
     </div>

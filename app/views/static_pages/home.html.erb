@@ -3,12 +3,27 @@
 
 <div class="row">
   <div class="col-xs-6 col-sm-4 col-lg-4">
-    Hello World! What should we put here? Some fancy thumbnail links?
+    <%= link_to image_tag("thumbnail1.jpg"), new_user_registration_path, class: "thumbnail" %>
+        <div class="caption">
+	  <h3>What is Future Young Pros?</h3>
+	  <p>Future Young Pros is a program that connects K-12 Students with
+	    the professional community through job shadowing opportunities</p>
+	</div>
   </div>
   <div class="col-xs-6 col-sm-4 col-lg-4">
-    Hello world! What should we put here? Maybe a brief introduction to the program?
+    <%= link_to image_tag("thumbnail2.jpg"), professionals_path, class: "thumbnail" %>
+      <div class="caption">
+	<h3>Further Your Professional Goals:</h3>
+	<p>Beyond the reward of giving back to the community, participating in the FutureYoungPros 
+	  helps you perform your job better.</p>
+      </div>
   </div>
   <div class="col-xs-6 col-sm-4 col-lg-4">
-    Hello world! What should we put here? We could have it unfold as the user scrolls do?
+    <%= link_to image_tag("thumbnail3.jpg"), businesses_path, class: "thumbnail" %>
+    <div class="caption">
+	<h3>Get Your Business Involved:</h3>
+	<p>Coordinate a Job Shadow Day at your office and receive free advertising on
+	  FutureYoungPros.com</p>
+      </div>
   </div>
 </div>
