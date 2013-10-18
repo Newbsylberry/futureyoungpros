@@ -1,6 +1,6 @@
 class MousController < ApplicationController
   before_action :set_mou, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_admin!, only: [:index]
   # GET /mous
   # GET /mous.json
   def index
@@ -10,7 +10,7 @@ class MousController < ApplicationController
   # GET /mous/1
   # GET /mous/1.json
   def show
- 
+    
   end
 
   # GET /mous/new
@@ -20,6 +20,7 @@ class MousController < ApplicationController
 
   # GET /mous/1/edit
   def edit
+    
   end
 
   # POST /mous

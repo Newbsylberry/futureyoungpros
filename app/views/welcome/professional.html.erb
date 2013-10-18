@@ -1,20 +1,13 @@
-<% @user = User.find(current_user)
-   if @user.role == 'professional' or @user.role == 'admin' %>
 
-<% mou = Mou.find_by(user_id: current_user.id)
-   if mou.nil? %>
 
 <h1>Please Take the Next Step by Filling Out MOU:</h1>
 <%= link_to "Complete MOU", new_mou_path %>
 
-<% else %>
+
 
 <h3>Thanks for participating in the future40B program!</h3>
 <h2><%= link_to "Add Another MOU", new_mou_path %></h2>
-<% end %>
 
-<% else %>
 
-<h1>You're not supposed to be here!</h1>
 
-<% end %>
+
