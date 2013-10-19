@@ -1,7 +1,7 @@
 <header>  
   <div class="row">
     <div class="masthead">
-      <div class="col-xs-12 col-sm-11 col-lg-11"> 
+      <div class="col-xs-11 col-sm-11 col-lg-11"> 
 	  <h3 class="text-muted">Future 40Below'er Program</h3>
 	    <ul class="nav nav-pills nav-justified">
 	      <li><%= link_to "Home", root_path %></li>
@@ -11,7 +11,7 @@
 	      <li><%= link_to "Administrators", administrators_path %></li>
 	    </ul>
       </div>
-    <div class="col-xs-6 col-sm-1 col-lg-1">
+    <div class="col-xs-1 col-sm-1 col-lg-1">
 	   <% if user_signed_in? %>
              <%= button_to "Sign Out", destroy_user_session_path, :method => :delete, class: "btn"  %>
 	       <% @role = current_user.role
