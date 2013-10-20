@@ -56,5 +56,5 @@ production:
   encoding: unicode
   database: jobshadow_production
   pool: 5
-  username: chrismccarthy
-  password:
+  username: cmccarthy
+  password: L33tman!
