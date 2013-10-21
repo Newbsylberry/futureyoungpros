@@ -3,7 +3,6 @@
 <%= render 'form' %>
 
 <%= link_to 'Show', @category %> |
-<%= link_to 'New Sub Category', new_category_subcategory(@category) %>
 <%= link_to 'Back', categories_path %>
 
 

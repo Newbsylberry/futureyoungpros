@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131014024913) do
+ActiveRecord::Schema.define(version: 20131021202159) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,8 @@ ActiveRecord::Schema.define(version: 20131014024913) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "category_id"
+    t.integer  "business_id"
+    t.integer  "subcategory_id"
   end
 
   create_table "professionals", force: true do |t|
@@ -77,6 +79,14 @@ ActiveRecord::Schema.define(version: 20131014024913) do
   add_index "students", ["name", "resource_type", "resource_id"], name: "index_students_on_name_and_resource_type_and_resource_id", using: :btree
   add_index "students", ["name"], name: "index_students_on_name", using: :btree
 
+  create_table "subcategories", force: true do |t|
+    t.string   "name"
+    t.string   "description"
+    t.integer  "categories_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "",             null: false
     t.string   "encrypted_password",     default: "",             null: false
@@ -95,26 +105,5 @@ ActiveRecord::Schema.define(version: 20131014024913) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
-
-  create_table "users_admins", id: false, force: true do |t|
-    t.integer "user_id"
-    t.integer "admin_id"
-  end
-
-  add_index "users_admins", ["user_id", "admin_id"], name: "index_users_admins_on_user_id_and_admin_id", using: :btree
-
-  create_table "users_professionals", id: false, force: true do |t|
-    t.integer "user_id"
-    t.integer "professional_id"
-  end
-
-  add_index "users_professionals", ["user_id", "professional_id"], name: "index_users_professionals_on_user_id_and_professional_id", using: :btree
-
-  create_table "users_students", id: false, force: true do |t|
-    t.integer "user_id"
-    t.integer "student_id"
-  end
-
-  add_index "users_students", ["user_id", "student_id"], name: "index_users_students_on_user_id_and_student_id", using: :btree
 
 end
