@@ -3,11 +3,11 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
 
-server "162.243.53.216:25", :web, :app, :db, primary: true
+server "162.243.59.174", :web, :app, :db, primary: true
 
 set :application, "futureyoungpros"
 set :user, "cmccarthy"
-set :port, 25
+set :port, 6566
 set :deploy_to, "/home/#{user}/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false
