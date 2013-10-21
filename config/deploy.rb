@@ -3,7 +3,7 @@
 require "bundler/capistrano"
 require "rvm/capistrano"
 
-server "162.243.53.216", :web, :app, :db, primary: true
+server "162.243.53.216:25", :web, :app, :db, primary: true
 
 set :application, "futureyoungpros"
 set :user, "cmccarthy"
