@@ -1,4 +1,0 @@
-class AddCategoryIToMou < ActiveRecord::Migration
-  def change
-  end
-end
