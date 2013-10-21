@@ -4,7 +4,7 @@ class SubcategoriesController < ApplicationController
   # GET /subcategories
   # GET /subcategories.json
   def index
-    @subcategories = Subcategory.find(params[:category_id])
+    @subcategories = Subcategory.all
   end
 
   # GET /subcategories/1
@@ -24,12 +24,12 @@ class SubcategoriesController < ApplicationController
   # POST /subcategories
   # POST /subcategories.json
   def create
-    @category = Category.find(@category)
+    @subcategory = Subcategory.new(subcategory_params)
     @subcategory.category_id = @category.id
 
     respond_to do |format|
       if @subcategory.save
-        format.html { redirect_to [@category, @subcategory], notice: 'Subcategory was successfully created.' }
+        format.html { redirect_to category_subcategories_path(@category), notice: 'Subcategory was successfully created.' }
         format.json { render action: 'show', status: :created, location: @subcategory }
       else
         format.html { render action: 'new' }
