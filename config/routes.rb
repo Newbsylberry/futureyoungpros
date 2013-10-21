@@ -12,7 +12,7 @@ Jobshadow::Application.routes.draw do
   match '/students', to: 'static_pages#students', via: 'get'
   match '/professionals', to: 'static_pages#professionals', via: 'get'
   match '/administrators', to: 'static_pages#administrators', via: 'get'
-  match '/business', to: 'static_pages#businesses', via: 'get'
+  match '/businesses', to: 'static_pages#businesses', via: 'get'
   match '/schools',  to: 'static_pages#schools', via: 'get'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
