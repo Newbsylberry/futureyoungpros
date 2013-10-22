@@ -57,4 +57,4 @@ production:
   database: jobshadow_production
   pool: 5
   username: cmccarthy
-  password: L33tman!
+  password: 
