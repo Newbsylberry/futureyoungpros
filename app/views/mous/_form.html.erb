@@ -24,8 +24,8 @@
       <%= f.text_field :phone, class: "form-control" %>
     </div>
     <div class="form-group">
-      <%#= f.label :category_id, "Category:" %><br>
-      <%#= f.collection_select(:category_id, Category.all, :id, :name) %>
+      <%= f.label :category_id, "Category:" %><br>
+      <%= f.collection_select(:category_id, Category.all, :id, :name) %>
     </div>
     <div class="form-group">
       <%= f.label :jobTitle, "Job Title:" %><br>
