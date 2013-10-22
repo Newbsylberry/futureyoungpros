@@ -6,7 +6,8 @@
            <%= devise_error_messages! %>
 	   <div class="form-group">
 	     <%= f.label :role, "I am a:" %><br />
-	     <%= f.select :role, ['professional', 'student'], class: "form-control" %>
+	     <%= f.text_field :role %>
+	     <%#= f.select :role, ['professional', 'student'], class: "form-control" %>
 	   </div>
 	   <div class="form-group">
 	     <%= f.label :email, "Enter Email Address:" %><br />
