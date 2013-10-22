@@ -16,9 +16,9 @@
       <tr>
         <td><%= subcategory.name %></td>
         <td><%= subcategory.description %></td>
-        <td><%= link_to 'Show', subcategory %></td>
-        <td><%= link_to 'Edit', edit_subcategory_path(subcategory) %></td>
-        <td><%= link_to 'Destroy', subcategory, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Show', category_subcategory_path(@category, subcategory) %></td>
+        <td><%= link_to 'Edit', edit_category_subcategory_path(@category, subcategory) %></td>
+        <td><%= link_to 'Destroy', category_subcategory_path(@category, subcategory), method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>

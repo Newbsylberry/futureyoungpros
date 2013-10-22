@@ -11,5 +11,7 @@
 </p>
 
 <%= link_to 'Edit', edit_category_path(@category) %> |
+<%= link_to 'Back', categories_path %> 
+<br>
 <%= link_to 'New Sub Category', new_category_subcategory_path(@category) %>
-<%= link_to 'Back', categories_path %>
+<%= link_to 'Show Sub Category', category_subcategories_path(@category) %>
