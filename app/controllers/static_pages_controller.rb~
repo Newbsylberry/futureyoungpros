@@ -4,11 +4,7 @@ class StaticPagesController < ApplicationController
   def home
     
   end
-  
-  def about
-    @pagename = "about"
-  end
-  
+
   def students
     @pagename = "students"
   end

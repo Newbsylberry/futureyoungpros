@@ -12,7 +12,6 @@ Jobshadow::Application.routes.draw do
 
   devise_for :users
   root 'static_pages#home'
-  match '/about', to: 'static_pages#about', via: 'get'
   match '/students', to: 'static_pages#students', via: 'get'
   match '/professionals', to: 'static_pages#professionals', via: 'get'
   match '/administrators', to: 'static_pages#administrators', via: 'get'

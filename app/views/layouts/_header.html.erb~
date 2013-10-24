@@ -1,15 +1,37 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
-  <div class="navbar-inner">
-    <div class="container">
-      <%= link_to "future 40B", root_path, id: "logo" %>
-    <nav>
-      <ul class="nav pull-left">
-	<li><%= link_to "Home", '#' %></li>
-	<li><%= link_to "Students", students_path %></li>
-	<li><%= link_to "Professionals", professionals_path %></li>
-	<li><%= link_to "Administrators", administrators_path %></li>
-      </ul>
-    </nav>
+<header>  
+  <div class="row">
+    <div class="masthead">
+      <div class="col-xs-11 col-sm-11 col-lg-11"> 
+	  <h3 class="text-muted">Future 40Below'er Program</h3>
+	    <ul class="nav nav-pills nav-justified">
+	      <li><%= link_to "Home", root_path %></li>
+	      <li><%= link_to "Professionals", professionals_path %></li>
+	      <li><%= link_to "Students", students_path %></li>
+	      <li><%= link_to "Businesses", businesses_path %></li>
+	      <li><%= link_to "Administrators", administrators_path %></li>
+	    </ul>
+      </div>
+    <div class="col-xs-1 col-sm-1 col-lg-1">
+	   <% if user_signed_in? %>
+             <%= button_to "Sign Out", destroy_user_session_path, :method => :delete, class: "btn"  %>
+	       <% @role = current_user.role
+		  if @role == 'admin' %>
+	       <%= button_to "Admin Home", welcome_admin_path, :method => :get, class: "btn" %>
+	     <% elsif @role == 'professional' %>
+	     
+	     <%= button_to "Professional Home", welcome_professional_path, :method => :get, class: "btn" %>
+	       <% end %>
+	     <%= current_user.email %>
+	   <% else %>
+	   <div class="btn-group">
+	   <%= button_to "Sign up", new_user_registration_path, :method => :get, class: "btn" %>
+	   <%= button_to "Sign in", new_user_session_path, :method => :get, class: "btn" %>
+	   <% end %>
+	   </div>
+    
     </div>
-  </div>
+    </div>
+    
 </header>
+  
+
