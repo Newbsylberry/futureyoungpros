@@ -1,26 +1,40 @@
 <% provide(:title,'Professionals') %>
 <%= render 'layouts/staticbanner' %>
 
-<h1>Professionals</h1>
-<p class="lead">Hosting a student has benefits beyond contributing to your local community</p>
-
+<div class="well">
+  <h2>Professionals</h2>
+  <p class="lead">Hosting a student has benefits beyond contributing to your local community</p>
+</div>
 <div class="row">
   <div class="col-sm-2 col-lg-2">
+    <div class="textContainer">
     <p>Professionals involved in the Future Young Professional program are involved in the community, making it a good net    working opportunity</p>
+    </div>
   </div>
   <div class="col-sm-2 col-lg-2">
-    <%= image_tag("#{@pagename}1.jpg", :width => "100%", :height => "100%") %>
+    <div class="ImageContainer">
+      <%= image_tag("#{@pagename}1.jpg", :class => "img-rounded", :width => "100%", :height => "100%") %>
+    </div>
   </div>
   <div class="col-sm-2 col-lg-2">
-  <p>Students can provide an objective insight into your job giving unique input and insight.
+    <div class="textContainer">
+      <p>Students can provide an objective insight into your job giving unique input and insight.</p>
+    </div>
   </div>
   <div class="col-sm-2 col-lg-2">
-    <%= image_tag("#{@pagename}2.jpg", :width => "100%", :height => "100%") %>
+    <div class="ImageContainer">
+    <%= image_tag("#{@pagename}2.jpg", :class => "img-rounded", :width => "100%", :height => "100%") %>
+    </div>
   </div>
   <div class="col-sm-2 col-lg-2">
-  <p>Hosting a student at your job demonstrates to your peers that you are committted to volunteering and your community.
+    <div class="textContainer">
+      <p>Hosting a student at your job demonstrates to your peers that you are committted to volunteering and your community.
+    </div>
   </div>
   <div class="col-sm-2 col-lg-2">
-    <%= image_tag("#{@pagename}3.jpg", :width => "100%", :height => "100%") %>
+    <div class="ImageContainer">
+    <%= image_tag("#{@pagename}3.jpg", :class => "img-rounded", :width => "100%", :height => "100%") %>
+    </div>
   </div>
 </div>
+

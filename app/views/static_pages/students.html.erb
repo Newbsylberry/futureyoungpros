@@ -2,14 +2,14 @@
 
 
 <%= render '/layouts/staticbanner' %>
-
-  <h1>Students</h1>
+<div class="well">
+  <h2>Students</h2>
   <p class="lead">Shadowing a young professional gives students an opportunity to experience working in a field of their interest, providing
   guidance and direction.</p>
-
+</div>
 <div class="row">
   <div class="col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1">
-    <%= image_tag("#{@pagename}1.jpg", :width => "100%", :height => "100%") %>
+    <%= image_tag("#{@pagename}1.jpg", :class => "img-rounded", :width => "100%", :height => "100%") %>
   </div>
   <div class="col-sm-6 col-lg-6">
      <p>Cats are similar in anatomy to the other felids, with strong, flexible bodies, quick reflexes, sharp retractable claws, 
