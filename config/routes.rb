@@ -1,14 +1,10 @@
 Jobshadow::Application.routes.draw do
-  
-  resources :categories do
-    resources :subcategories
-  end
+    
   
 
   get "welcome/admin"
   get "welcome/professional"
   get "welcome/student"
-  resources :mous
 
   devise_for :users
   root 'static_pages#home'
@@ -18,6 +14,14 @@ Jobshadow::Application.routes.draw do
   match '/administrators', to: 'static_pages#administrators', via: 'get'
   match '/businesses', to: 'static_pages#businesses', via: 'get'
   match '/schools',  to: 'static_pages#schools', via: 'get'
+  
+  resources :mous
+  resources :businesses
+  resources :categories do
+    resources :subcategories
+  end
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

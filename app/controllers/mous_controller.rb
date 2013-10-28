@@ -74,6 +74,6 @@ class MousController < ApplicationController
     def mou_params
       params.require(:mou).permit(:firstName, :lastName, :phone, :jobTitle, 
                                   :duration, :availability, :considerations,
-                                  :category_id)
+                                  :category_id, :business_id)
     end
 end

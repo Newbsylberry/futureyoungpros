@@ -1,6 +1,6 @@
 class BusinessesController < ApplicationController
   before_action :set_business, only: [:show, :edit, :update, :destroy]
-
+  before_action :authenticate_admin!, except: [:new, :create]
   # GET /businesses
   # GET /businesses.json
   def index
@@ -28,7 +28,7 @@ class BusinessesController < ApplicationController
 
     respond_to do |format|
       if @business.save
-        format.html { redirect_to @business, notice: 'Business was successfully created.' }
+        format.html { redirect_to new_mou_path, notice: 'Business was successfully created.' }
         format.json { render action: 'show', status: :created, location: @business }
       else
         format.html { render action: 'new' }

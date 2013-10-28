@@ -1,0 +1,31 @@
+ <%= f.fields_for :business do |business_field| %>
+ 
+ <div class="field">
+ <%= business_field.label :name %><br>
+ <%= business_field.text_field :name %>
+ </div>
+ <div class="field">
+ <%= business_field.label :address1 %><br>
+ <%= business_field.text_field :address1 %>
+ </div>
+ <div class="field">
+ <%= business_field.label :address2 %><br>
+ <%= business_field.text_field :address2 %>
+ </div>
+ <div class="field">
+ <%= business_field.label :city %><br>
+ <%= business_field.text_field :city %>
+ </div>
+ <div class="field">
+ <%= business_field.label :state %><br>
+ <%= business_field.text_field :state %>
+ </div>
+ <div class="field">
+ <%= business_field.label :zip %><br>
+ <%= business_field.text_field :zip %>
+ </div>
+ <div class="field">
+ <%= business_field.label :phone %><br>
+ <%= business_field.text_field :phone %>
+ </div>
+ <% end %>	
