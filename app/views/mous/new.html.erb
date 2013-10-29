@@ -1,6 +1,8 @@
 <% @role = current_user.role
    if @role == 'professional' or
-      @role == 'admin' %>
+      @role == 'admin' or 
+      @role == 'college-student'
+   %>
 
 <div>
    <h1>Memorandum of Understanding:</h1>

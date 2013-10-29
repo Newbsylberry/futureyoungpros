@@ -11,4 +11,8 @@ class WelcomeController < ApplicationController
 
   def student
   end
+
+  def college_student
+  end
+
 end

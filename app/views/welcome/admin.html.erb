@@ -1,13 +1,11 @@
-
-<% @user = User.find(current_user)
-   if @user.role == 'admin' %>
-
-<ul>
-  <li><%= link_to 'New Mou', new_mou_path %></li>
-  <li><%= link_to "Submitted MOU's", mous_path %></li>
-  <li><%= link_to "Category Creation", new_category_path %></li>
-<% else %>
-
-<h1>GET OUT OF MY ROOOOOOOM!</h1>
-
-<% end %>
+<div class="row">
+  <div class="col-sm-3 col-lg-3">
+     <div class="list-group">
+       <%= link_to 'New Mou', new_mou_path, :class => "list-group-item" %>
+       <%= link_to "Submitted MOU's", mous_path, :class => "list-group-item" %>
+       <%= link_to "Category Creation", new_category_path, :class => "list-group-item" %>
+     </div>
+  </div>
+  <div class="col-sm-9 col-lg-9">
+  </div>
+</div>

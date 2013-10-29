@@ -5,7 +5,8 @@ Jobshadow::Application.routes.draw do
   get "welcome/admin"
   get "welcome/professional"
   get "welcome/student"
-
+  get "welcome/college_student"
+  
   devise_for :users
   root 'static_pages#home'
   match '/about', to: 'static_pages#about', via: 'get'
