@@ -14,7 +14,7 @@ set :use_sudo, false
 
 set :scm, "git"
 set :repository, "git@github.com:Newbsylberry/#{application}.git"
-set :branch, "userRemoval"
+set :branch, "master"
 
 
 default_run_options[:pty] = true
