@@ -1,5 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :mous
   easy_roles :roles_mask, method: :bitmask
   
 

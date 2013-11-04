@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  before_action :authenticate_user!
+  before_action :authenticate_admin!
   before_action :configure_permitted_parameters, if: :devise_controller?
   # Prevent CSRF attacks by raising an exception.
   # For APIs, you may want to use :null_session instead.
@@ -17,6 +17,8 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  
+
 
 
   protect_from_forgery with: :exception
@@ -29,8 +31,8 @@ class ApplicationController < ActionController::Base
  end
 
  def authenticate_admin!
-   unless current_user.role == 'admin'
-     redirect_to new_user_session_path
+   unless user_signed_in? and current_user.role == 'admin'
+     redirect_to root_path
    end
  end
 end

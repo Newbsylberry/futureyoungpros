@@ -4,6 +4,7 @@
 <table class="table table-hover">
   <thead>
     <tr>
+      <th>Email Address</th>
       <th>First Name</th>
       <th>Last Name</th>
       <th>Phone</th>
@@ -20,7 +21,8 @@
   <tbody>
     <% @mous.each do |mou| %>
       <tr>
-        <td><%= mou.firstName %></td>
+        <td><%= mou.emailAddress %></td>
+	<td><%= mou.firstName %></td>
         <td><%= mou.lastName %></td>
         <td><%= mou.phone %></td>
         <td><%= mou.category.name if mou.category %></td>

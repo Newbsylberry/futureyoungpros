@@ -1,0 +1,4 @@
+class AddEmailToMous < ActiveRecord::Migration
+  def change
+  end
+end

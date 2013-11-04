@@ -12,12 +12,16 @@
       </div>
       <% end %>
     
-      <div class="form-group">
-        <%= f.label :business_id,"Business:" %><br>
-        <%= collection_select(:mou, :business_id, Business.all, :id, :name) %>
-        <%= link_to "Add Business To List", new_business_path %>
-      </div>
-      <div class="form-group">
+    <div class="form-group">
+      <%= f.label :business_id,"Business:" %><br>
+      <%= collection_select(:mou, :business_id, Business.all, :id, :name) %>
+      <%= link_to "Add Business To List", new_business_path %>
+    </div>
+    <div class="form-group">
+      <%= f.label :emailAddress, "Email Address:" %><br>
+      <%= f.text_field :emailAddress, class: "form-control" %>
+    </div>
+    <div class="form-group">
       <%= f.label :firstName, "First Name:" %><br>
       <%= f.text_field :firstName, class: "form-control" %>
     </div>

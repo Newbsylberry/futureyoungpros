@@ -1,6 +1,7 @@
 class MousController < ApplicationController
   before_action :set_mou, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_admin!, only: [:index]
+  skip_before_action :authenticate_admin!, except: [:index, :edit, :destroy]
+  
   # GET /mous
   # GET /mous.json
   def index
@@ -27,12 +28,11 @@ class MousController < ApplicationController
   # POST /mous.json
   def create
     @mou = Mou.new(mou_params)
-    @mou.user_id = current_user.id
-
+    
     respond_to do |format|
       if @mou.save
-        format.html { redirect_to @mou, notice: 'Mou was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @mou }
+        format.html { redirect_to root_path, notice: 'Thanks for Registering, a confirmation email is on its way.' }
+        format.json { render action: :get, status: :created, location: root_path }
       else
         format.html { render action: 'new' }
         format.json { render json: @mou.errors, status: :unprocessable_entity }
@@ -72,7 +72,7 @@ class MousController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mou_params
-      params.require(:mou).permit(:firstName, :lastName, :phone, :jobTitle, 
+      params.require(:mou).permit(:firstName, :lastName, :emailAddress, :phone, :jobTitle, 
                                   :duration, :availability, :considerations,
                                   :category_id, :business_id)
     end

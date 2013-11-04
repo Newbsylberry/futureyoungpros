@@ -1,20 +1,9 @@
-<% @role = current_user.role
-   if @role == 'professional' or
-      @role == 'admin' or 
-      @role == 'college-student'
-   %>
-
 <div>
-   <h1>Memorandum of Understanding:</h1>
-   <br>
+   <h1>Host a Student:</h1>
    <br>
    <%= render 'form' %>
    <%= link_to 'Back', mous_path %>
 </div>
   
 
-       <% else %>
-       
-<h1>You shall not pass</h1>
 
-<% end %>
