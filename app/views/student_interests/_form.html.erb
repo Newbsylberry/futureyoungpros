@@ -21,12 +21,12 @@
       <%= f.text_field :lastName, class: "form-control" %>
     </div>
     <div class="form-group">
-      <%= f.label :school_id, "School:" %><br>
-      <%= f.text_field :school_id, class: "form-control" %>
+      <%= label :school_id, "School:" %><br>
+      <%= collection_select(:student_interest, :school_id, School.all, :id, :name) %>
     </div>
     <div class="form-group">
       <%= label :category_id,"Category:" %><br>
-      <%= collection_select(:mou, :category_id, Category.all, :id, :name) %>
+      <%= collection_select(:student_interest, :category_id, Category.all, :id, :name) %>
     </div>
     <div class="actions">
       <%= f.submit %>
