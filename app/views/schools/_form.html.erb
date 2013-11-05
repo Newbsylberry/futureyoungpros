@@ -1,0 +1,61 @@
+<div class="row">
+  <div class="col-xs-12 col-md-6">
+    <%= form_for(@school) do |f| %>
+    <% if @school.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@school.errors.count, "error") %> prohibited this school from being saved:</h2>
+
+      <ul>
+	<% @school.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+	<% end %>
+      </ul>
+    </div>
+    <% end %>
+
+    <div class="form-group">
+      <%= f.label :name, "School Name:" %><br>
+      <%= f.text_field :name, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :address1, "Address:" %><br>
+      <%= f.text_field :address1, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :address2, "Address 2:" %><br>
+      <%= f.text_field :address2, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :city, "City:" %><br>
+      <%= f.text_field :city, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :state, "State:" %><br>
+      <%= f.text_field :state, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :zipCode, "Zip Code:" %><br>
+      <%= f.text_field :zipCode, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :contactFirstName, "Contact Person First Name:" %><br>
+      <%= f.text_field :contactFirstName, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :contactLastName, "Contact Person Last Name:" %><br>
+      <%= f.text_field :contactLastName, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :contactEmail, "Contact Person Email Address:" %><br>
+      <%= f.text_field :contactEmail, class: "form-control" %>
+    </div>
+    <div class="form-group">
+      <%= f.label :school_district_id, "School District:" %><br>
+      <%= f.number_field :school_district_id, class: "form-control" %>
+    </div>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
+    <% end %>
+  </div>
+</div>
