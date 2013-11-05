@@ -1,0 +1,57 @@
+<%= form_for(@school) do |f| %>
+  <% if @school.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@school.errors.count, "error") %> prohibited this school from being saved:</h2>
+
+      <ul>
+      <% @school.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :address1 %><br>
+    <%= f.text_field :address1 %>
+  </div>
+  <div class="field">
+    <%= f.label :address2 %><br>
+    <%= f.text_field :address2 %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br>
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br>
+    <%= f.text_field :state %>
+  </div>
+  <div class="field">
+    <%= f.label :zipCode %><br>
+    <%= f.text_field :zipCode %>
+  </div>
+  <div class="field">
+    <%= f.label :contactFirstName %><br>
+    <%= f.text_field :contactFirstName %>
+  </div>
+  <div class="field">
+    <%= f.label :contactLastName %><br>
+    <%= f.text_field :contactLastName %>
+  </div>
+  <div class="field">
+    <%= f.label :contactEmail %><br>
+    <%= f.text_field :contactEmail %>
+  </div>
+  <div class="field">
+    <%= f.label :school_district_id %><br>
+    <%= f.number_field :school_district_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

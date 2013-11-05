@@ -2,9 +2,11 @@ Jobshadow::Application.routes.draw do
     
   
 
+<<<<<<< HEAD
   resources :student_interests
-
+=======
   resources :schools
+>>>>>>> schoolCreation
 
   get "welcome/admin"
   get "welcome/professional"
