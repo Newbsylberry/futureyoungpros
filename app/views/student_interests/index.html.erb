@@ -1,0 +1,33 @@
+<h1>Listing student_interests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Firstname</th>
+      <th>Lastname</th>
+      <th>School</th>
+      <th>Category</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @student_interests.each do |student_interest| %>
+      <tr>
+        <td><%= student_interest.firstName %></td>
+        <td><%= student_interest.lastName %></td>
+        <td><%= student_interest.school_id %></td>
+        <td><%= student_interest.category_id %></td>
+        <td><%= link_to 'Show', student_interest %></td>
+        <td><%= link_to 'Edit', edit_student_interest_path(student_interest) %></td>
+        <td><%= link_to 'Destroy', student_interest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Student interest', new_student_interest_path %>

@@ -2,6 +2,8 @@ Jobshadow::Application.routes.draw do
     
   
 
+  resources :student_interests
+
   get "welcome/admin"
   get "welcome/professional"
   get "welcome/student"
