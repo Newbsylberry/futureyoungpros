@@ -9,6 +9,15 @@
        <%= link_to "Category Creation", new_category_path, :class => "list-group-item" %>
      </div>
   </div>
-  <div class="col-sm-9 col-lg-9">
+  <div class="col-sm-3 col-lg-3">
+    <%= link_to "Number of Hosts Signed Up:", mous_path %><br>
+    <%= @mous.count %>
+  </div>
+  <div class="col-sm-3 col-lg-3">
+    <%= link_to "Students Interested In Shadowing:", student_interests_path %></br>
+    <%= @student_interests.count %>
+  </div>
+  <div class="col-sm-3 col-lg-3">
+    <%= @mous.count %>
   </div>
 </div>

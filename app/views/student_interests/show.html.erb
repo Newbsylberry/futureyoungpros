@@ -1,24 +1,56 @@
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Firstname:</strong>
-  <%= @student_interest.firstName %>
-</p>
-
-<p>
-  <strong>Lastname:</strong>
-  <%= @student_interest.lastName %>
-</p>
-
-<p>
-  <strong>School:</strong>
-  <%= @student_interest.school_id %>
-</p>
-
-<p>
-  <strong>Category:</strong>
-  <%= @student_interest.category_id %>
-</p>
-
-<%= link_to 'Edit', edit_student_interest_path(@student_interest) %> |
-<%= link_to 'Back', student_interests_path %>
+<div class="row">
+  <div class="col-xs-6 col-sm-4 col-md-4 col-lg-4">
+    <p>
+      <strong>Student First Name:</strong>
+      <%= @student_interest.firstName %>
+    </p>
+    <p>
+      <strong>Student Last Name:</strong>
+      <%= @student_interest.lastName %>
+    </p>
+    <p>
+      <strong>School:</strong>
+      <%= @student_interest.school.name %>
+    </p>
+    <p>
+      <Strong>School Point of Contact:</strong>
+      <%= @student_interest.school.contactFirstName + " " +  @student_interest.school.contactLastName %>
+    <p>
+    <p>
+      <Strong>Point of Contact Email:</strong>
+      <%= @student_interest.school.contactEmail %>
+    <p>
+      <strong>Category:</strong>
+      <%= @student_interest.category_id %>
+    </p>
+  </div>
+  <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
+    <div class="well">
+      <h3>Possible Hosts:</h3>
+      <div class="table-responsive">
+	<table class="table table-hover">
+	  <thead>
+	    <tr>
+	      <th>First Name:</th>
+	      <th>Last Name:</th>
+	      <th>Email Address:</th>
+	      <th>Business Name:</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <% @mous.each do |mou| %>
+	    <tr>
+	      <td><%= mou.firstName %></td>
+	      <td><%= mou.lastName %></td>
+	      <td><%= mou.emailAddress %></td>
+	      <td><%= mou.business.name if mou.business %></td>
+	    </tr>
+	    <% end %>
+	</table>
+      </div>
+    </div>
+  </div>
+</div>
+  <%= link_to 'Edit', edit_student_interest_path(@student_interest) %> |
+  <%= link_to 'Back', student_interests_path %>
