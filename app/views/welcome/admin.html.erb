@@ -1,21 +1,20 @@
+<div class="well">
+  <h1>Administrator Home</h1>
+</div>
 <div class="row">
+  <%= render 'layouts/admin_menu' %>
   <div class="col-sm-3 col-lg-3">
-     <div class="list-group">
-       <%= link_to 'New Mou', new_mou_path, :class => "list-group-item" %>
-       <%= link_to "Submitted MOU's", mous_path, :class => "list-group-item" %>
-       <%= link_to "New Student Interest", new_student_interest_path, :class => "list-group-item" %>
-       <%= link_to "Student Interest List", student_interests_path, :class => "list-group-item" %>
-       <%= link_to "School Creation", new_school_path, :class => "list-group-item" %>
-       <%= link_to "Category Creation", new_category_path, :class => "list-group-item" %>
-     </div>
-  </div>
-  <div class="col-sm-3 col-lg-3">
+    <div class="well">
     <%= link_to "Number of Hosts Signed Up:", mous_path %><br>
     <%= @mous.count %>
+    <br>
+    </div>
   </div>
   <div class="col-sm-3 col-lg-3">
-    <%= link_to "Students Interested In Shadowing:", student_interests_path %></br>
+    <div class="well">
+    <%= link_to "Students Interested", student_interests_path %><br>
     <%= @student_interests.count %>
+    </div>
   </div>
   <div class="col-sm-3 col-lg-3">
     <%= @mous.count %>

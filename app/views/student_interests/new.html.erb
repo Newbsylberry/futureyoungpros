@@ -1,5 +1,11 @@
-<h1>New Student Interest</h1>
+<div class="well">
+  <h1>New Student Interest</h1>
+</div>
+<div class="row">
+  <%= render 'layouts/admin_menu' %>
+  <div class="col-sm-9 col-md-9 col-lg-9">
+    <%= render 'form' %>
+    <%= link_to 'Back', student_interests_path %>
+  </div>
+</div>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', student_interests_path %>
