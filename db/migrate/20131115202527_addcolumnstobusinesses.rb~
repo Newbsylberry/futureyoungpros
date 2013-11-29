@@ -1,0 +1,4 @@
+class Addcolumnstobusinesses < ActiveRecord::Migration
+  def change
+  end
+end

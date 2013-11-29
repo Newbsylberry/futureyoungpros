@@ -31,6 +31,7 @@ class MousController < ApplicationController
     
     respond_to do |format|
       if @mou.save
+        UserMailer.registration_email(@mou).deliver
         format.html { redirect_to root_path, notice: 'Thanks for Registering, a confirmation email is on its way.' }
         format.json { render action: :get, status: :created, location: root_path }
       else
