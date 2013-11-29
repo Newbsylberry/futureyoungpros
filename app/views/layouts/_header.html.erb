@@ -2,13 +2,14 @@
   <div class="row">
     <div class="masthead">
       <div class="col-xs-11 col-sm-11 col-lg-11"> 
-	  <h3 class="text-muted">Future Young Professionals</h3>
-	    <ul class="nav nav-pills nav-justified">
+   <!--	  <h3 class="text-muted">Future Young Professionals</h3> -->
+	    
+           <ul class="nav navbar-nav">
+	      <a class="navbar-brand" href="/">Future 40Below'er Program</a>
 	      <li><%= link_to "Home", root_path %></li>
 	      <li><%= link_to "About", about_path %></li>
-	      <li><%= link_to "Professionals", professionals_path %></li>
-	      <li><%= link_to "Students", students_path %></li>
-	      <li><%= link_to "Businesses", businesses_path %></li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
 	      <% if user_signed_in? and current_user.role == 'admin' %>
 	      <li><div class="btn-group">
 		  <button type="button" class="btn-large btn-primary dropdown-toggle" data-toggle="dropdown">
@@ -21,12 +22,14 @@
 		</div> 
 	      </li>
 	    </ul>
-      
+	   
 	    <% else %>
 	  <li><%= link_to "Host A Student", new_mou_path, :class => "btn-large btn-success" %></li>
           </ul>
+
 	  <% end %>
 </div>
+
     <div class="col-xs-1 col-sm-1 col-lg-1">
     </div>
     </div>   

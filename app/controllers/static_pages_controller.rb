@@ -9,6 +9,10 @@ class StaticPagesController < ApplicationController
     @pagename = "about"
   end
   
+  def sponsors
+    @pagename = "sponsors"
+  end
+
   def students
     @pagename = "students"
   end

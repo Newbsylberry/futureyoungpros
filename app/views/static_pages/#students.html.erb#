@@ -1,0 +1,21 @@
+<% provide(:title,'Students') %>
+
+
+<%= render '/layouts/staticbanner' %>
+<div class="well">
+  <h2>Students</h2>
+  <p class="lead">How can you settle on a career without having experience in that field?</p>
+</div>
+<div class="row">
+  <div class="col-sm-5 col-sm-offset-1 col-lg-5 col-lg-offset-1">
+    <%= image_tag("#{@pagename}1.jpg", :class => "img-rounded", :width => "100%", :height => "100%") %>
+  </div>
+  <div class="col-sm-6 col-lg-6">
+    <div class="studentTextBox">
+      <p> The Future 40 Below-ers program gives students the opportunity to spend a day (or half-day) with a local young 
+	professional in various career fields. This opportunity allows you to explore and actually experience a snapshot of what a day in a particular career field entails. Students are 
+	encouraged to participate more than once - shadow as many professionals as it takes to find out what you truly want to do for a living!</p>
+    </div>  
+  </div>
+</div>
+

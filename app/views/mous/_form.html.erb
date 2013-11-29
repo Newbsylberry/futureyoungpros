@@ -18,6 +18,10 @@
       <%= link_to "Add Business To List", new_business_path %>
     </div>
     <div class="form-group">
+      <%= label :category_id,"Category:" %><br>
+      <%= collection_select(:mou, :category_id, Category.all, :id, :name) %>
+    </div>
+    <div class="form-group">
       <%= f.label :emailAddress, "Email Address:" %><br>
       <%= f.text_field :emailAddress, class: "form-control" %>
     </div>
@@ -33,10 +37,10 @@
       <%= f.label :jobTitle, "Job Title:" %><br>
       <%= f.text_field :jobTitle, class: "form-control" %>
     </div>
-    <div class="form-group">
+ <!--   <div class="form-group">
       <%= f.label :phone, "Phone Number:" %><br>
       <%= f.text_field :phone, class: "form-control" %>
-    </div>
+    </div> -->
     
 <!-- business partial
       
@@ -44,18 +48,15 @@
     <%#= f.fields_for :business do |business_field| %>
       <%#= render 'layouts/businessForm', :f => business_field %>
     <%# end %> -->
-    <div class="form-group">
-      <%= label :category_id,"Category:" %><br>
-      <%= collection_select(:mou, :category_id, Category.all, :id, :name) %>
-    </div>
-    <div class="form-group">
+    
+ <!-- <div class="form-group">
       <%= f.label :duration, "Duration (Half or Full Day):" %><br>
       <%= f.text_field :duration, class: "form-control" %>
     </div>
     <div class="form-group">
       <%= f.label :considerations, "Considerations For Students:" %><br>
       <%= f.text_area(:considerations, :rows => '4', class: "form-control") %>
-    </div>
+    </div> -->
 
 
 
