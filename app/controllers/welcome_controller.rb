@@ -4,6 +4,7 @@ class WelcomeController < ApplicationController
   def admin
     @mous = Mou.all
     @student_interests = StudentInterest.all 
+    @matches = Match.all
   end
 
   def professional

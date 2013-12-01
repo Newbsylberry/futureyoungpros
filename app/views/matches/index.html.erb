@@ -1,0 +1,41 @@
+<div class="well">
+<h1>Listing All Matches</h1>
+</div>
+<div class="row">
+  <%= render 'layouts/admin_menu' %>
+  <div class="col-sm-9 col-md-9 col-lg-9">
+    <div class="table-responsive">
+      <table class="table table-hover">
+	<thead>
+	  <tr>
+	    <th>Administrator:</th>
+	    <th>Host:</th>
+	    <th>Student:</th>
+	    <th>Date:</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+	</thead>
+
+	<tbody>
+	  <% @openMatches = @matches.where(:hostDate.blank? ) %>
+	    <% if @openMatches %>
+	      <% @openMatches.each do |match| %>
+	        <tr>
+		  <td><%= match.user.email if match.user %></td>
+		  <td><%= match.mou.firstName + " " + match.mou.lastName if match.mou %></td>
+		  <td><%= match.student_interest.school.contactEmail if match.student_interest and match.student_interest.school %></td>
+		  <td><%= match.hostDate %></td>
+		  <td><%= link_to 'Show', match %></td>
+		  <td><%= link_to 'Edit', edit_match_path(match) %></td>
+		  <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		</tr>
+	</tbody>
+      </table>
+      <% end %>
+      <br>
+      <% end %>
+      <%= link_to 'New Match', new_match_path %>
+    </div>
+  </div>

@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :matches
+
   easy_roles :roles_mask, method: :bitmask
   
 

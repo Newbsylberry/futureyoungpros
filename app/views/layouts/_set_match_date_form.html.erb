@@ -1,0 +1,29 @@
+<div class="well">
+  <h2>Set Date of Succesfull Host:</h2>
+  <%= form_for(@match) do |f| %>
+      <% if @match.errors.any? %>
+        <div id="error_explanation">
+	  <h2><%= pluralize(@match.errors.count, "error") %> prohibited this match from being saved:</h2>
+	  <ul>
+	    <% @match.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+	    <% end %>
+	  </ul>
+	</div>
+	<% end %>
+
+	<div class="field">
+	  <%= f.hidden_field :user_id, :value => @match.user.id %>
+	  <%= f.hidden_field :student_interest_id, :value => @match.student_interest.id %>
+	  <%= f.hidden_field :mou_id, :value => @match.mou.id %>
+	</div>
+	<div class="field">
+	  <%= f.label :hostDate, 'Date Student Hosted (to be completed once student hosted):' %><br>
+	  <%= f.date_select :hostDate %>
+	</div>
+	<div class="actions">
+	  <%= f.submit %>
+	</div>
+	<% end %>
+	
+	

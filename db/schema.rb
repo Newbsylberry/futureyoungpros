@@ -11,25 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 20131105193126) do
-=======
-ActiveRecord::Schema.define(version: 20131105195558) do
->>>>>>> schoolCreation
+ActiveRecord::Schema.define(version: 20131130045038) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "admins", force: true do |t|
-    t.string   "name"
-    t.integer  "resource_id"
-    t.string   "resource_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "admins", ["name", "resource_type", "resource_id"], name: "index_admins_on_name_and_resource_type_and_resource_id", using: :btree
-  add_index "admins", ["name"], name: "index_admins_on_name", using: :btree
 
   create_table "businesses", force: true do |t|
     t.string   "name"
@@ -50,6 +35,15 @@ ActiveRecord::Schema.define(version: 20131105195558) do
     t.datetime "updated_at"
   end
 
+  create_table "matches", force: true do |t|
+    t.integer  "user_id"
+    t.integer  "mou_id"
+    t.integer  "student_interest_id"
+    t.datetime "hostDate"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "mous", force: true do |t|
     t.string   "firstName"
     t.string   "lastName"
@@ -60,32 +54,11 @@ ActiveRecord::Schema.define(version: 20131105195558) do
     t.string   "considerations"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "category_id"
-    t.integer  "business_id"
-    t.integer  "subcategory_id"
     t.string   "emailAddress"
+    t.integer  "business_id"
+    t.integer  "category_id"
   end
 
-  create_table "professionals", force: true do |t|
-    t.string   "name"
-    t.integer  "resource_id"
-    t.string   "resource_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "professionals", ["name", "resource_type", "resource_id"], name: "index_professionals_on_name_and_resource_type_and_resource_id", using: :btree
-  add_index "professionals", ["name"], name: "index_professionals_on_name", using: :btree
-
-  create_table "programs", force: true do |t|
-    t.string   "name"
-    t.string   "location"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-<<<<<<< HEAD
-=======
   create_table "schools", force: true do |t|
     t.string   "name"
     t.string   "address1"
@@ -101,7 +74,6 @@ ActiveRecord::Schema.define(version: 20131105195558) do
     t.datetime "updated_at"
   end
 
->>>>>>> schoolCreation
   create_table "student_interests", force: true do |t|
     t.string   "firstName"
     t.string   "lastName"
@@ -110,17 +82,6 @@ ActiveRecord::Schema.define(version: 20131105195558) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
-
-  create_table "students", force: true do |t|
-    t.string   "name"
-    t.integer  "resource_id"
-    t.string   "resource_type"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "students", ["name", "resource_type", "resource_id"], name: "index_students_on_name_and_resource_type_and_resource_id", using: :btree
-  add_index "students", ["name"], name: "index_students_on_name", using: :btree
 
   create_table "subcategories", force: true do |t|
     t.string   "name"
@@ -144,6 +105,7 @@ ActiveRecord::Schema.define(version: 20131105195558) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "roles",                  default: 0
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

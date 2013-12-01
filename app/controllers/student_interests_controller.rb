@@ -11,6 +11,8 @@ class StudentInterestsController < ApplicationController
   # GET /student_interests/1.json
   def show
     @mous = Mou.where(category_id: @student_interest.category_id)  
+    @match = Match.new
+    @user = User.find(current_user)
   end
 
   # GET /student_interests/new

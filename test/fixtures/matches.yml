@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  user_id: 1
+  mou_id: 1
+  student_interest_id: 1
+  hostDate: 2013-11-29 23:50:38
+
+two:
+  user_id: 1
+  mou_id: 1
+  student_interest_id: 1
+  hostDate: 2013-11-29 23:50:38
