@@ -25,30 +25,25 @@ class MatchesController < ApplicationController
   # POST /matches.json
   def create
     @match = Match.new(match_params)
-
-    
       if @match.save
         flash[:notice] = "Host, School, and Administrator notified of hosting opportunity."
-        redirect_to student_interests_path
+        redirect_to matches_path
       else
-        flash[:notice] = "Error adding match, did you select more than one host at a time?"
-        redirect_to student_interests_path
+        flash[:notice] = "Error adding match, did you make sure to select one and only one host?"
+        redirect_to matches_path
       end
-    
   end
 
   # PATCH/PUT /matches/1
   # PATCH/PUT /matches/1.json
-  def update
-    respond_to do |format|
+  def update  
       if @match.update(match_params)
-        format.html { redirect_to @match, notice: 'Match was successfully updated.' }
-        format.json { head :no_content }
+        flash[:notice] = "Host, School, and Administrator notified of hosting opportunity."
+        redirect_to matches_path
       else
-        format.html { render action: 'edit' }
-        format.json { render json: @match.errors, status: :unprocessable_entity }
+        flash[:notice] = "Error adding match, did you make sure to select one and only one host?"
+        redirect_to matches_path
       end
-    end
   end
 
   # DELETE /matches/1
