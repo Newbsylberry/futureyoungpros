@@ -18,6 +18,7 @@ Jobshadow::Application.routes.draw do
   match '/about', to: 'static_pages#about', via: 'get'
   match '/students', to: 'static_pages#students', via: 'get'
   match '/professionals', to: 'static_pages#professionals', via: 'get'
+  match '/sponsors', to: 'static_pages#sponsors', via: 'get'
   match '/administrators', to: 'static_pages#administrators', via: 'get'
   match '/businesses', to: 'static_pages#businesses', via: 'get'
   match '/schools',  to: 'static_pages#schools', via: 'get'
