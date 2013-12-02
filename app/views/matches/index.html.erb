@@ -9,9 +9,9 @@
       <table class="table table-hover">
 	<thead>
 	  <tr>
-	    <th>Administrator:</th>
-	    <th>Host:</th>
 	    <th>Student:</th>
+	    <th>Host:</th>
+	    <th>Administrator:</th>
 	    <th>Date:</th>
 	    <th></th>
 	    <th></th>
@@ -21,9 +21,9 @@
 	<tbody>
 	  <% @matches.each do |match| if match.hostDate.blank? %>
 	        <tr>
-		  <td><%= match.user.email if match.user %></td>
-		  <td><%= match.mou.firstName + " " + match.mou.lastName if match.mou %></td>
 		  <td><%= match.student_interest.school.contactEmail if match.student_interest and match.student_interest.school %></td>
+		  <td><%= match.mou.firstName + " " + match.mou.lastName if match.mou %></td>
+		  <td><%= match.user.email if match.user %></td>		  
 		  <td><%= match.hostDate %></td>
 		  <td><%= link_to 'Show', match %></td>
 		  <td><%= link_to 'Edit', edit_match_path(match) %></td>

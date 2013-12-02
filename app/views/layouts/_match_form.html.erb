@@ -20,8 +20,8 @@
 	</div>
 	<div class="field">
 	  <% @mous.each do |mou| %>
-	  <%= f.check_box :mou_id %>
-	  <%= f.label :mou_id, mou.emailAddress + " --- " + mou.firstName + " " + mou.lastName %>
+	  <%= radio_button_tag('match[mou_id]', mou.id) %>
+	  <%= label :mou_id, mou.emailAddress + " --- " + mou.firstName + " " + mou.lastName %>
 	 <br>
 	  <% end %>
 	</div>
