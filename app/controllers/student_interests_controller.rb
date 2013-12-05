@@ -13,6 +13,7 @@ class StudentInterestsController < ApplicationController
     @mous = Mou.where(category_id: @student_interest.category_id)  
     @match = Match.new
     @user = User.find(current_user)
+    @matches = Match.where(student_interest_id: @student_interest.id)
   end
 
   # GET /student_interests/new

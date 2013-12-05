@@ -16,15 +16,15 @@
       <%= @student_interest.school.name if @student_interest.school %>
     </p>
     <p>
-      <Strong>School Point of Contact:</strong>
+      <strong>School Point of Contact:</strong>
       <%= @student_interest.school.contactFirstName + " " +  @student_interest.school.contactLastName if @student_interest.school %>
     <p>
     <p>
-      <Strong>Point of Contact Email:</strong>
+      <strong>Point of Contact Email:</strong>
       <%= @student_interest.school.contactEmail if @student_interest.school %>
     <p>
       <strong>Category:</strong>
-      <%= @student_interest.category_id %>
+      <%= @student_interest.category.name if @student_interest.category %>
     </p>
   </div>
   <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7">
@@ -33,3 +33,39 @@
 </div>
   <%= link_to 'Edit', edit_student_interest_path(@student_interest) %> |
   <%= link_to 'Back', student_interests_path %>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>Student Matches</h1>
+    <div class="table-responsive">
+      <table class="table table-hover">
+	<thead>
+	  <tr>
+	    <th>Administrator Email</th>
+	    <th>Student First Name</th>
+	    <th>Student Point of Contact</th>
+	    <th>Professionals Email</th>
+	    <th></th>
+	    <th></th>
+	    <th></th>
+	  </tr>
+	</thead>
+
+	<tbody>
+	  <% if @matches %>
+	    <% @matches.each do |match| %>
+	  <tr>
+	    <td><%= match.user.email %>
+	    <td><%= match.student_interest.firstName %></td>
+	    <td><%= match.student_interest.school.contactEmail %></td>
+	    <td><%= match.mou.emailAddress %></td>
+	    <td><%= link_to 'Show', match %></td>
+	    <td><%= link_to 'Edit', edit_match_path(match) %></td>
+	    <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+	  </tr>
+	  <% end %>
+	</tbody>
+      </table>
+    </div>
+  </div>
+</div>    
+<% end %>
