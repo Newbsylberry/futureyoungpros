@@ -1,5 +1,6 @@
 class UserMailer < ActionMailer::Base
-  default to: Proc.new { "chris.s.mccarthy@gmail.com", "tpalermo@saltcitydistrict.com" },
+  admin = [ "chris.s.mccarthy@gmail.com", "tpalermo@saltcitydistrict.com" ]
+  default to: Proc.new { admin }
           from: "admin@future40b.com"
   
   def registration_email(mou)
