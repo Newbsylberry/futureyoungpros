@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1>Thanks for registering to participate, <%= @mou.firstName %></h1>
+    <p>
+      You will be placed with a student who is interested in your field.  
+      When a student has expressed interest, we will contact you with more information.  
+      Thanks again for participating in the program.<br/>
+    </p>
+    <br>
+    <%= link_to 'www.Future40b.com' root_path %>
+  </body>
+</html>
