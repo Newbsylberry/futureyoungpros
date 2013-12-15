@@ -77,4 +77,18 @@ Jobshadow::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  #Mailer Information
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+    address: "smtp.mandrillapp.com",
+    port:  587,
+    domain: "future40B.com",
+    user_name: "chris.s.mccarthy@gmail.com",
+    password: "0FnpD0F0tDFbiJpx5PAM5Q",
+    authentication: "plain",
+    enable_starttls_auto: true }
+  
+  config.action_mailer.perform_deliveries = true
+
 end

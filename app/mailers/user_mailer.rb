@@ -1,5 +1,5 @@
 class UserMailer < ActionMailer::Base
-  default from: "from@example.com"
+  default from: "admin@future40b.com"
 
   def registration_email(mou)
     @mou = mou
