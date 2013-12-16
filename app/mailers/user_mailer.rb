@@ -1,6 +1,6 @@
 class UserMailer < ActionMailer::Base
   
-  default :cc => [ "chris.s.mccarthy@gmail.com", "tpalermo@saltcitydistrict.com" ],
+  default :cc => [ "chris.s.mccarthy@gmail.com", "tpalermo@saltdistrict.com" ],
           from: "admin@future40b.com"
   
   def registration_email(mou)
