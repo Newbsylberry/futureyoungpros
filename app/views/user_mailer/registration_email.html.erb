@@ -6,10 +6,20 @@
   <body>
     <h1>Thanks for registering to participate, <%= @mou.firstName %></h1>
     <p>
+      Here is the information you submitted:<br>
+        Name: <%= @mou.firstName + " " + @mou.lastName %><br>
+	Email Address: <%= @mou.emailAddress %><br>
+	Commitment: <%= @mou.considerations %><br>
+
+      If any of this is wrong, reply to one of the Email Addresses CC'ed, not to this email.
+
       You will be placed with a student who is interested in your field.  
       When a student has expressed interest, we will contact you with more information.  
       Thanks again for participating in the program.<br/>
     </p>
+    <br>
+    <p>Sincerely,<p> <br>
+    <p>Future40Below Robot</p>
     <br>
     <%= link_to('www.Future40b.com', root_path) %>
   </body>
