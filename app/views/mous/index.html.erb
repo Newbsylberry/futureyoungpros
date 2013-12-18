@@ -9,13 +9,10 @@
 	<thead>
 	  <tr>
 	    <th>Email Address</th>
-	    <th>First Name</th>
-	    <th>Last Name</th>
-	    <th>Phone</th>
 	    <th>Category</th>
 	    <th>Business Name</th>
 	    <th>Job Title</th>
-	    <th>Duration</th>
+	    <th>Considerations</th>
 	    <th></th>
 	    <th></th>
 	    <th></th>
@@ -26,13 +23,10 @@
 	  <% @mous.each do |mou| %>
 	  <tr>
             <td><%= mou.emailAddress %></td>
-	    <td><%= mou.firstName %></td>
-            <td><%= mou.lastName %></td>
-            <td><%= mou.phone %></td>
             <td><%= mou.category.name if mou.category %></td>
 	    <td><%= mou.business.name if mou.business %></td>
 	    <td><%= mou.jobTitle %></td>
-            <td><%= mou.duration %></td>
+            <td><%= mou.considerations %></td>
             <td><%= link_to 'Show', mou %></td>
             <td><%= link_to 'Edit', edit_mou_path(mou) %></td>
             <td><%= link_to 'Destroy', mou, method: :delete, data: { confirm: 'Are you sure?' } %></td>

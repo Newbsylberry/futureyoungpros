@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-  has_many :matches
+  has_many :matches, dependent: :destroy
 
   easy_roles :roles_mask, method: :bitmask
   
