@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+<body>
+  <h3><%= "#{@match.student_interest.school.contactFirstName}, a hosting opportunity is 
+	 available for #{@match.student_interest.firstName}" %> </h3>
+  
+    <h3>Information</h3><br>
+      <p>    
+	Student Name: <%= @match.student_interest.firstName + " " + @match.student_interest.lastName %><br>
+	Host Name: <%= @match.mou.firstName + " " + @match.mou.lastName %> <br>
+	Host Email: <%= @match.mou.email %>
+	Host Business: <%= @match.mou.business.name %> <br>
+	Hosting Details: <%= @match.mou.considerations %><br>
+      </p>
+   <h4> 
+     <%= 
+	"#{@match.mou.firstName} #{@match.mou.lastName} will contact you with dates that they are available to host."
+     %>
+   </h4>	  

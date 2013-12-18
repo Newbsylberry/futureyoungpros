@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+<body>
+  <h3><%= "#{@match.mou.firstName}, A Student has Expressed Interest in being hosted" %></h3>
+  <br>
+  <p>
+    <%= 
+       "Thanks again for signing up to participate in the Future40B program.  A student from #{@match.student_interest.school.name} is interested in shadowing you for a day.  Please contact their guidance counselor, #{@match.student_interest.school.contactFirstName} #{@match.student_interest.school.contactLastName}, to arrange a date that works."
+    %>
+  </p>
+  <h3>Information</h3><br>
+  <p>    
+    Student Name: <%= @match.student_interest.firstName %><br>
+    Student School: <%= @match.student_interest.school.name %><br>
+    Hosting Details: <%= @match.mou.considerations %><br>
+  <p>
+  <p>
+    <%= "The next step is contacting the guidance counselor of the student with specific dates that you are available to 
+	 host #{@match.student_interest.firstName}.
+	 Please contact, #{@match.student_interest.school.contactFirstName} #{@match.student_interest.school.contactLastName} 
+	 at the following email address:" %>
+  </p>
+  <br>
+  <h4><%= @match.student_interest.school.contactEmail %></h4>
+  <br>
+  <h4>If you have any questions, or are no longer interested in participating in the Future 40Belower program, contact:</h4>
+  <p>
+    Host Administrator: <%= @match.user.email %><br>
+  </p>
+  <p>
+    Thanks again for participating in the Future40B Program!
+  </p>
+  <br>
+  <p>
+    Sincerely, <br>
+    The Future40B Robot
+  </p>
+</body>
+</html>    
+    

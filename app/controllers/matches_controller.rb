@@ -26,6 +26,9 @@ class MatchesController < ApplicationController
   def create
     @match = Match.new(match_params)
       if @match.save
+        UserMailer.prof_match_email(@match).deliver
+        UserMailer.student_match_email(@match).deliver
+        UserMailer.admin_match_email(@match).deliver
         flash[:notice] = "Host, School, and Administrator notified of hosting opportunity."
         redirect_to matches_path
       else

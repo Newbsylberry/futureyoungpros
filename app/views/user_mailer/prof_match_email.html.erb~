@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+<body>
+  <h3><%= "#{@match.mou.firstName}, A Student has Expressed Interest in #{@match.mou.category.name}" %></h3>
+  <br>
+  <p>
+    <%= 
+       "Thanks again for signing up to participate in the Future40B program.  A student from #{@match.student_interest.school.name} is interested in shadowing you for a day.  Please contact their guidance counselor, #{@match.student_interst.school.contactFirstName} #{@match.student_interest.school.contactLastName}, to arrange a date that works."
+    %>
+  </p>
+  <h3>Information</h3><br>
+  <p>
+    Hosting Details: <%= @match.mou.considerations %><br>
+    Student Name: <%= @match.student_interest.firstName %><br>
+    Student School: <%= @match.student_interest.school.name %><br>
+    Email Address: <%= @match.student_interest.school.contactEmail %><br>
+    Host Administrator: <%= @match.user.email %><br>
+  </p>
+  <p>
+    Thanks again for participating in the Future40B Program!
+  </p>
+  <br>
+  <p>
+    Sincerely, <br>
+    The Future40B Robot
+  </p>
+</body>
+    
+    
