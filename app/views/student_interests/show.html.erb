@@ -27,6 +27,10 @@
       <strong>Category:</strong>
       <%= @student_interest.category.name if @student_interest.category %>
     </p>
+    <p>
+    <strong>Student Notes:</strong>
+      <%= @student_interest.notes %>
+    </p>
     <%= link_to 'Edit Student Interest', edit_student_interest_path(@student_interest) %> |
     <%= link_to 'Return to Student Interest List', student_interests_path %>
   </div>

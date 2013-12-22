@@ -11,11 +11,11 @@
     <h3>Information</h3><br>
       <p>    
 	Student Name: <%= @match.student_interest.firstName + " " + @match.student_interest.lastName %><br>
-	Student School: <%= @match.student_interest.school.name %>
-	Student Contact: <%= @match.student_interest.school.contactFirstName %> + " " + <%= @match.student_interest.school.contactLastName %>
-	Student Contact Email: <%= @match.student_interest.school.contactEmail %>
+	Student School: <%= @match.student_interest.school.name %><br>
+	Student Contact: <%= @match.student_interest.school.contactFirstName + " " + @match.student_interest.school.contactLastName %><br>
+	Student Contact Email: <%= @match.student_interest.school.contactEmail %> <br>
 	Host Name: <%= @match.mou.firstName + " " + @match.mou.lastName %> <br>
-	Host Email: <%= @match.mou.emailAddress %>
+	Host Email: <%= @match.mou.emailAddress %> <br>
 	Host Business: <%= @match.mou.business.name %> <br>
 	Hosting Details: <%= @match.mou.considerations %><br>
       </p>

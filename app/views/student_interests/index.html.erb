@@ -15,6 +15,7 @@
 	    <th>Last Name</th>
 	    <th>School</th>
 	    <th>Category</th>
+	    <th>Notes</th>
 	    <th></th>
 	    <th></th>
 	    <th></th>
@@ -28,6 +29,7 @@
 	    <td><%= student_interest.lastName %></td>
 	    <td><%= student_interest.school.name if student_interest.school %></td>
 	    <td><%= student_interest.category.name if student_interest.category %></td>
+	    <td><%= student_interest.notes %></td>
 	    <td><%= link_to 'Show', student_interest %></td>
 	    <td><%= link_to 'Edit', edit_student_interest_path(student_interest) %></td>
 	    <td><%= link_to 'Destroy', student_interest, method: :delete, data: { confirm: 'Are you sure?' } %></td>
