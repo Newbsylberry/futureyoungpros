@@ -17,6 +17,14 @@ class ApplicationController < ActionController::Base
     end
   end
 
+ def student_matched
+   @matches = Match.all
+   @matches.each do |match|
+     if @student == match.student_interest_id
+       true
+     end
+   end
+ end 
   
 
 
@@ -35,4 +43,7 @@ class ApplicationController < ActionController::Base
      redirect_to root_path
    end
  end
+
+  
+
 end

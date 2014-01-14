@@ -4,6 +4,7 @@ class StudentInterestsController < ApplicationController
   # GET /student_interests
   # GET /student_interests.json
   def index
+    @matches = Match.all
     @student_interests = StudentInterest.all
   end
 
@@ -64,6 +65,15 @@ class StudentInterestsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def student_matched?
+      @matches = Match.all
+      @matches.each do |match|
+        if student_interest.id == match.student_interest.id
+        end
+      end
+    end
+    
 
   private
     # Use callbacks to share common setup or constraints between actions.
@@ -74,5 +84,6 @@ class StudentInterestsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_interest_params
       params.require(:student_interest).permit(:firstName, :lastName, :school_id, :category_id, :notes)
-    end
+    end    
+
 end
