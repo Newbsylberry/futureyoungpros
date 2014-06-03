@@ -8,6 +8,7 @@
        <a class="navbar-brand" href="/"><%= image_tag("logo.png") %></a>
        <li class="navbarLink"><%= link_to "Home", root_path %></li>
        <li class="navbarLink"><%= link_to "About", about_path %></li>
+       <li class="navbarLink"><%= link_to "Testimonials", testimonials_path %></li>
        <li class="navbarLink"><%= link_to "Sponsors", sponsors_path %></li>
      </ul>
      <ul class="nav navbar-nav navbar-right">
@@ -29,6 +30,7 @@
       </div>
       <% else %>
       <li><%= link_to "Host A Student", new_mou_path, :class => "btn-large btn-success" %></li>
+      <li><%= link_to "Junior Achievement Job Sites", job_sites_path, :class => "btn-large btn-success" %></li>
 </ul>
 </div>
 </div>

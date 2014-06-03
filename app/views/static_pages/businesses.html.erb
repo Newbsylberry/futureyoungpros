@@ -2,18 +2,15 @@
 <%= render 'layouts/staticbanner' %>
 <div class="well">
   <h2>Businesses</h2>
-  <p class="lead">Sign up for the Future Young Professional program as a business</p>
+  <p class="lead">Apply to a Junior Achievement Job Site!</p>
 </div>
 <div class="row">
   <div class="col-sm-5 col-lg-5 col-md-offset-1">
     
-      <p>Increase your businesses profile with free advertising on the future young professional home page when you sign your business up to be a job shadow site.</p>
-      <br>
-      <p>Making your business a job shadow site means students will be allowed to select your business specifically when looking for job shadowing opportunities.</p>
-      <br>
-      <p>The student will send your business their information directly so that you can coordinate the experience.</p>
-      <br>
-      <p>Turning your business into a job shadow site helps strengthen its role in the larger community.</p>
+    <% @job_sites.each do |job_site| %>
+        <h1> <%= job_site.name %></h1>
+        <%= link_to "Now Hiring Junior Achievers!", job_site %>
+    <% end %>
     
   </div>
   <div class="col-sm-5 col-lg-5">

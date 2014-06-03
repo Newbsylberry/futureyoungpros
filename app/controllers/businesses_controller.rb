@@ -1,6 +1,6 @@
 class BusinessesController < ApplicationController
   before_action :set_business, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_admin!, except: [:new, :create]
+  before_action :authenticate_admin!, except: [:new, :create, :show]
   # GET /businesses
   # GET /businesses.json
   def index
@@ -69,6 +69,7 @@ class BusinessesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def business_params
-      params.require(:business).permit(:name, :address1, :address2, :city, :state, :zip, :phone)
+      params.require(:business).permit(:name, :address1, :address2, :city, :state, :zip, :phone,
+                                        :job_site)
     end
 end

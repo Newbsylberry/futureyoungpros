@@ -20,8 +20,10 @@ Jobshadow::Application.routes.draw do
   match '/professionals', to: 'static_pages#professionals', via: 'get'
   match '/sponsors', to: 'static_pages#sponsors', via: 'get'
   match '/administrators', to: 'static_pages#administrators', via: 'get'
-  match '/businesses', to: 'static_pages#businesses', via: 'get'
+  match '/job_sites', to: 'static_pages#businesses', via: 'get'
   match '/schools',  to: 'static_pages#schools', via: 'get'
+  match '/testimonials', to: 'static_pages#testimonials', via: 'get'
+  match '/facebook_post', to: 'static_pages#facebook_post', via: 'get'
   
   resources :mous
   resources :businesses

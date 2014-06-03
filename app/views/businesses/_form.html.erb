@@ -1,50 +1,52 @@
 <div class="row">
   <div class="col-xs-12 col-md-6">
-<%= form_for(@business) do |f| %>
-  <% if @business.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@business.errors.count, "error") %> prohibited this business from being saved:</h2>
-
-      <ul>
-      <% @business.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-    <div class="form-group">
-      <%= f.label :name, "Business Name:" %><br>
-      <%= f.text_field :name, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :address1, "Address:" %><br>
-      <%= f.text_field :address1, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :address2, "Address 2:" %><br>
-      <%= f.text_field :address2, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :city, "City:" %><br>
-      <%= f.text_field :city, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :state, "State:" %><br>
-      <%= f.text_field :state, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :zip, "Zip:" %><br>
-      <%= f.text_field :zip, class: "form-control" %>
-    </div>
-    <div class="form-group">
-      <%= f.label :phone, "Phone:" %><br>
-      <%= f.text_field :phone, class: "form-control" %>
-    </div>
-    <div class="actions">
-      <%= f.submit %>
-    </div>
-  <% end %>
+    <%= form_for(@business) do |f| %>
+        <% if @business.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@business.errors.count, "error") %> prohibited this business from being saved:</h2>
+              <ul>
+                <% @business.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+        <div class="form-group">
+          <%= f.label :name, "Business Name:" %><br>
+          <%= f.text_field :name, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :address1, "Address:" %><br>
+          <%= f.text_field :address1, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :address2, "Address 2:" %><br>
+          <%= f.text_field :address2, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :city, "City:" %><br>
+          <%= f.text_field :city, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :state, "State:" %><br>
+          <%= f.text_field :state, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :zip, "Zip:" %><br>
+          <%= f.text_field :zip, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :phone, "Phone:" %><br>
+          <%= f.text_field :phone, class: "form-control" %>
+        </div>
+        <div class="form-group">
+          <%= f.label :job_site, "Job Site?" %><br>
+          <%= f.check_box :job_site, class: "form-control" %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+    <% end %>
   </div>
   <div class="col-xs-12 col-md-6">
     <div class="textContainer">

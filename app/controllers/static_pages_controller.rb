@@ -13,6 +13,14 @@ class StaticPagesController < ApplicationController
     @pagename = "sponsors"
   end
 
+  def testimonials
+    @pagename = "testimonials"
+  end
+
+  def facebook_post
+    @pagename = "facebook"
+  end
+
   def students
     @pagename = "students"
   end
@@ -27,6 +35,7 @@ class StaticPagesController < ApplicationController
 
   def businesses
     @pagename = "businesses"
+    @job_sites = Business.where(job_site: true )
   end
 
   def schools
