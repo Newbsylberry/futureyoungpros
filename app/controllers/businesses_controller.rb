@@ -10,6 +10,7 @@ class BusinessesController < ApplicationController
   # GET /businesses/1
   # GET /businesses/1.json
   def show
+    @job_site_application = JobSiteApplication.new
   end
 
   # GET /businesses/new

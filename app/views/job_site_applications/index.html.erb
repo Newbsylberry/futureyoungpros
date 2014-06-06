@@ -1,0 +1,33 @@
+<h1>Listing job_site_applications</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Business</th>
+      <th>School</th>
+      <th>First name</th>
+      <th>Last name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @job_site_applications.each do |job_site_application| %>
+      <tr>
+        <td><%= job_site_application.business_id %></td>
+        <td><%= job_site_application.school_id %></td>
+        <td><%= job_site_application.first_name %></td>
+        <td><%= job_site_application.last_name %></td>
+        <td><%= link_to 'Show', job_site_application %></td>
+        <td><%= link_to 'Edit', edit_job_site_application_path(job_site_application) %></td>
+        <td><%= link_to 'Destroy', job_site_application, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Job site application', new_job_site_application_path %>

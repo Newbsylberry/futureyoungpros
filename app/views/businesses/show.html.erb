@@ -35,5 +35,16 @@
   <%= @business.phone %>
 </p>
 
+<% if @business.job_site? %>
+    <h1>Apply to <%= @business.name %></h1>
+    <%= render 'layouts/job_site_application_form' %>
+<% end %>
+
+<% if current_user and current_user.role == 'admin' %>
+    <% @business.job_site_applications.each do |application| %>
+        <%= application.first_name %> <br>
+        <% end %>
+    <% end %>
+
 <%= link_to 'Edit', edit_business_path(@business) %> |
 <%= link_to 'Back', businesses_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Business:</strong>
+  <%= @job_site_application.business_id %>
+</p>
+
+<p>
+  <strong>School:</strong>
+  <%= @job_site_application.school_id %>
+</p>
+
+<p>
+  <strong>First name:</strong>
+  <%= @job_site_application.first_name %>
+</p>
+
+<p>
+  <strong>Last name:</strong>
+  <%= @job_site_application.last_name %>
+</p>
+
+<%= link_to 'Edit', edit_job_site_application_path(@job_site_application) %> |
+<%= link_to 'Back', job_site_applications_path %>
