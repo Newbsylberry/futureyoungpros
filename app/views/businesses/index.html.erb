@@ -10,6 +10,7 @@
       <th>State</th>
       <th>Zip</th>
       <th>Phone</th>
+      <th>Job Site?</th>
       <th></th>
       <th></th>
       <th></th>
@@ -26,6 +27,7 @@
         <td><%= business.state %></td>
         <td><%= business.zip %></td>
         <td><%= business.phone %></td>
+        <td><%= business.job_site? %></td>
         <td><%= link_to 'Show', business %></td>
         <td><%= link_to 'Edit', edit_business_path(business) %></td>
         <td><%= link_to 'Destroy', business, method: :delete, data: { confirm: 'Are you sure?' } %></td>

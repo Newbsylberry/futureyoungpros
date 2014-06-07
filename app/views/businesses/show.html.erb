@@ -30,16 +30,19 @@
   </p>
 </div>
 <div class="col-xs-6">
-<% if @business.job_site? %>
+<% if @business.job_site? and current_user.nil? %>
     <h1>Apply to <%= @business.name %></h1>
     <%= render 'layouts/job_site_application_form' %>
-<% end %>
+<% elsif @business.job_site? and current_user and current_user.role == 'admin' %>
+      <h1>Submitted Applications</h1>
+      <% @business.job_site_applications.each do |application| %>
+          <%= link_to "#{application.first_name}'s Application", application %> <br>
+      <% end %>
+  <% end %>
 
-<% if current_user and current_user.role == 'admin' %>
-    <% @business.job_site_applications.each do |application| %>
-        <%= link_to "#{application.first_name}'s Application", application %> <br>
-        <% end %>
-    <% end %>
+
+
+
 <%= link_to 'Edit', edit_business_path(@business) %> |
 <%= link_to 'Back', businesses_path %>
 </div>
