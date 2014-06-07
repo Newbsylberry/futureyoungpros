@@ -29,8 +29,10 @@
    </div>
       </div>
       <% else %>
-      <li><%= link_to "Host A Student", new_mou_path, :class => "btn-large btn-success" %></li>
-      <li><%= link_to "Junior Achievement Job Sites", job_sites_path, :class => "btn-large btn-success" %></li>
+          <div class="btn-group btn-group-lg">
+            <button class="btn-lg btn-success"><%= link_to "Host A Student", new_mou_path  %></button>
+            <button class="btn-lg btn-success"><%= link_to "Apply to Job Site", job_sites_path %></button>
+          </div>
 </ul>
 </div>
 </div>
