@@ -19,6 +19,10 @@
       <%= f.collection_select(:school_id, School.all, :id, :name) %>
     </div>
     <div class="field">
+      <%= f.label :school_code, 'Enter your school code:' %><br>
+      <%= f.number_field :school_code %>
+    </div>
+    <div class="field">
       <%= f.label :first_name %><br>
       <%= f.text_field :first_name %>
     </div>

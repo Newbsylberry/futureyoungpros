@@ -28,12 +28,14 @@ class JobSiteApplicationsController < ApplicationController
     @job_site_application = JobSiteApplication.new(job_site_application_params)
 
     respond_to do |format|
-      if @job_site_application.save
-        format.html { redirect_to job_sites_path, notice: "Succesfully Applied to
+      if @job_site_application.school_code == @job_site_application.school.school_code
+        @job_site_application.save
+        format.html { redirect_to job_sites_path, notice: "Successfully Applied to
         #{@job_site_application.business.name}" }
         format.json { render action: 'show', status: :created, location: @job_site_application }
-      else
-        format.html { render action: 'new' }
+        else
+        format.html { redirect_to @job_site_application.business,
+        notice: "Your school code is incorrect, please try again or ask your teacher for assistance." }
         format.json { render json: @job_site_application.errors, status: :unprocessable_entity }
       end
     end
@@ -71,6 +73,7 @@ class JobSiteApplicationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_site_application_params
-      params.require(:job_site_application).permit(:business_id, :school_id, :first_name, :last_name)
+      params.require(:job_site_application).permit(:business_id, :school_id, :first_name,
+                                                   :last_name, :school_code)
     end
 end

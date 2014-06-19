@@ -14,7 +14,7 @@
 	    <th>Contactfirstname</th>
 	    <th>Contactlastname</th>
 	    <th>Contactemail</th>
-	    <th>School district</th>
+	    <th>School Code</th>
 	    <th></th>
 	    <th></th>
 	    <th></th>
@@ -30,7 +30,7 @@
             <td><%= school.contactFirstName %></td>
             <td><%= school.contactLastName %></td>
             <td><%= school.contactEmail %></td>
-            <td><%= school.school_district_id %></td>
+            <td><%= school.school_code %></td>
             <td><%= link_to 'Show', school %></td>
             <td><%= link_to 'Edit', edit_school_path(school) %></td>
             <td><%= link_to 'Destroy', school, method: :delete, data: { confirm: 'Are you sure?' } %></td>

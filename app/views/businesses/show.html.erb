@@ -36,7 +36,7 @@
 <% elsif @business.job_site? and current_user and current_user.role == 'admin' %>
       <h1>Submitted Applications</h1>
       <% @business.job_site_applications.each do |application| %>
-          <%= link_to "#{application.first_name}'s Application", application %> <br>
+          <h3><%= link_to "#{application.first_name} #{application.last_name}'s Application", application %> <br></h3>
       <% end %>
   <% end %>
 
@@ -44,5 +44,5 @@
 
 
 <%= link_to 'Edit', edit_business_path(@business) %> |
-<%= link_to 'Back', businesses_path %>
+<%= link_to 'Back to Admin Home', welcome_admin_path %>
 </div>
