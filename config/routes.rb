@@ -8,7 +8,7 @@ Jobshadow::Application.routes.draw do
 
   resources :student_interests
 
-  resources :schools
+
 
   get "welcome/admin"
   get "welcome/professional"
@@ -26,7 +26,8 @@ Jobshadow::Application.routes.draw do
   match '/schools',  to: 'static_pages#schools', via: 'get'
   match '/testimonials', to: 'static_pages#testimonials', via: 'get'
   match '/facebook_post', to: 'static_pages#facebook_post', via: 'get'
-  
+
+  resources :schools
   resources :mous
   resources :businesses
   resources :categories do

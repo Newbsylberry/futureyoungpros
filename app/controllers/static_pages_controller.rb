@@ -40,6 +40,7 @@ class StaticPagesController < ApplicationController
 
   def schools
     @pagename = "schools"
+    @schools = School.all
   end
 
 end

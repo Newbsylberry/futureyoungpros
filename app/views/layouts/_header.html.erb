@@ -1,51 +1,66 @@
-<header>  
+<header>
   <div class="row">
     <div class="masthead">
-      <div class="col-xs-11 col-sm-11 col-lg-11"> 
-   <!--	  <h3 class="text-muted">Future Young Professionals</h3> -->
-   <div class="navbarContainer"> 
-     <ul class="nav navbar-nav">
-       <a class="navbar-brand" href="/"><%= image_tag("logo.png") %></a>
-       <li class="navbarLink"><%= link_to "Home", root_path %></li>
-       <li class="navbarLink"><%= link_to "About", about_path %></li>
-       <li class="navbarLink"><%= link_to "Testimonials", testimonials_path %></li>
-       <li class="navbarLink"><%= link_to "Sponsors", sponsors_path %></li>
-     </ul>
-     <ul class="nav navbar-nav navbar-right">
-       <% if user_signed_in? and current_user.role == 'admin' %>
-       <li><div class="btn-group">
-	   <button type="button" class="btn-large btn-primary dropdown-toggle" data-toggle="dropdown">
-	     <%= current_user.email %> <span class="caret"></span>
-	   </button>
-	   <ul class="dropdown-menu" role="menu">
-	     <li class="navbarLink"><%= link_to "Home", welcome_admin_path %></li>
-	     <li class="navbarLink"><%= link_to "Student List", student_interests_path %></li>
-	     <li class="navbarLink"><%= link_to "New Student Interest", new_student_interest_path %></li>
-	     <li class="navbarLink"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
-	   </ul>
-	 </div> 
-       </li>
-     </ul>
-   </div>
+      <div class="col-xs-11 col-sm-11 col-lg-11">
+        <!--	  <h3 class="text-muted">Future Young Professionals</h3> -->
+        <div class="navbarContainer">
+          <ul class="nav navbar-nav">
+            <a class="navbar-brand" href="/"><%= image_tag("logo.png") %></a>
+            <li class="navbarLink"><%= link_to "Home", root_path %></li>
+            <li class="navbarLink"><%= link_to "About", about_path %></li>
+            <li class="navbarLink"><%= link_to "Testimonials", testimonials_path %></li>
+            <li class="navbarLink"><%= link_to "Sponsors", sponsors_path %></li>
+          </ul>
+
+          <!-- The right drop down menu -->
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- If the user is an admin and logged in -->
+            <% if user_signed_in? and current_user.role == 'admin' %>
+
+                <!-- A list Item of Button Groups -->
+                <li>
+                  <div class="btn-group">
+
+                    <!-- Button for admin drop down menu -->
+                    <button type="button" class="btn-large btn-primary dropdown-toggle" data-toggle="dropdown">
+                        <%= current_user.email %> <span class="caret"></span>
+                    </button>
+
+                    <!-- THe drop down menu list -->
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="navbarLink"><%= link_to "Home", welcome_admin_path %></li>
+                        <li class="navbarLink"><%= link_to "Student List", student_interests_path %></li>
+                        <li class="navbarLink"><%= link_to "New Student Interest", new_student_interest_path %></li>
+                        <li class="navbarLink"><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+                    </ul>
+                  </div>
+                </li>
+          </ul>
+        </div>
+            <!-- Else the Link for the Public is Displayed -->
+            <% else %>
+
+      <div class="btn-group">
+        <button class="btn btn-success"><%= link_to "Host A Student", new_mou_path  %></button>
+        <button class="btn btn-success"><%= link_to "Apply to Job Site", schools_path %></button>
       </div>
-      <% else %>
-          <div class="btn-group btn-group-lg">
-            <button class="btn-lg btn-success"><%= link_to "Host A Student", new_mou_path  %></button>
-            <button class="btn-lg btn-success"><%= link_to "Apply to Job Site", job_sites_path %></button>
-          </div>
-</ul>
-</div>
-</div>
-
-
-	  <% end %>
-
+            <% end %>
+    </div>
 
 
     <div class="col-xs-1 col-sm-1 col-lg-1">
     </div>
-    </div>   
-  </div>
+    </div>
+ </div>
+
+
+
+
+
+
+
+
 </header>
   
 

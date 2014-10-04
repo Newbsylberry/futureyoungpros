@@ -1,7 +1,14 @@
 <%= provide(:title, 'Schools') %>
-<div class="jumbotron">
-<h1>Schools</h1>
-<p>
-This could be a page where relevant information to schools are posted.
-</p>
+
+<h1>Select Participating School</h1>
+<div class="row">
+  <% @schools.each do |school| %>
+      <div class="col-xs-4">
+            <%= link_to school, class: "thumbnail" do %>
+            <%= image_tag("#{school.name}.jpg") %><p class="text-center lead"><%= school.name %></p>
+      <% end %>
+      </div>
+  <% end %>
 </div>
+
+
