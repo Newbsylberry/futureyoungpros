@@ -4,12 +4,12 @@
 <div class="row">
   <% @schools.each do |school| %>
       <% unless school.businesses.empty? and !current_user %>
-      <div class="col-xs-4">
+          <div class="col-xs-4">
             <%= link_to school, class: "thumbnail" do %>
-            <%= image_tag(school.picture_url) if school.picture? %><p class="text-center lead"><%= school.name %></p>
+                <%= image_tag(school.picture_url.to_s) if school.picture? %><p class="text-center lead"><%= school.name %></p>
+            <% end %>
+          </div>
       <% end %>
-      </div>
-          <% end %>
   <% end %>
 </div>
 

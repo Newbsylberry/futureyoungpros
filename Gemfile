@@ -33,7 +33,7 @@ gem 'jbuilder', '~> 1.2'
 gem 'devise', '3.0.0.rc'
 gem 'easy_roles'
 gem 'cancan'
-
+gem 'fog'
 gem 'carrierwave'
 
 group :doc do
