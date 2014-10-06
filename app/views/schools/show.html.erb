@@ -1,54 +1,71 @@
-<p id="notice"><%= notice %></p>
+<% if current_user %>
+    <p id="notice"><%= notice %></p>
+    <p>
+      <strong>Name:</strong>
+      <%= @school.name %>
+    </p>
+    <p>
+      <strong>Address1:</strong>
+      <%= @school.address1 %>
+    </p>
+    <p>
+      <strong>Address2:</strong>
+      <%= @school.address2 %>
+    </p>
+    <p>
+      <strong>City:</strong>
+      <%= @school.city %>
+    </p>
+    <p>
+      <strong>State:</strong>
+      <%= @school.state %>
+    </p>
+    <p>
+      <strong>Zipcode:</strong>
+      <%= @school.zipCode %>
+    </p>
+    <p>
+      <strong>Contactfirstname:</strong>
+      <%= @school.contactFirstName %>
+    </p>
+    <p>
+      <strong>Contactlastname:</strong>
+      <%= @school.contactLastName %>
+    </p>
+    <p>
+      <strong>Contactemail:</strong>
+      <%= @school.contactEmail %>
+    </p>
+    <p>
+      <strong>School Code:</strong>
+      <%= @school.school_code %>
+    </p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @school.name %>
-</p>
+    <%= form_for @school_business do |business| %>
+        <%= business.hidden_field :school_id, value: @school.id %>
+        <div class="form-group">
+          <%= business.label :business_id,"Add Business Site for School:" %><br>
+          <%= collection_select(:school_business, :business_id, Business.all, :id, :name) %>
+        </div>
 
-<p>
-  <strong>Address1:</strong>
-  <%= @school.address1 %>
-</p>
+        <%= business.submit %>
+    <% end %>
 
-<p>
-  <strong>Address2:</strong>
-  <%= @school.address2 %>
-</p>
 
-<p>
-  <strong>City:</strong>
-  <%= @school.city %>
-</p>
 
-<p>
-  <strong>State:</strong>
-  <%= @school.state %>
-</p>
+    <%= link_to 'Edit', edit_school_path(@school) %> |
+    <%= link_to 'Back', schools_path %>
+<% end %>
 
-<p>
-  <strong>Zipcode:</strong>
-  <%= @school.zipCode %>
-</p>
+<h3>Select Participating Businesses for Your School:</h3>
+<ul class="list-group">
+<% @school.businesses.each do |business| %>
+    <li class="list-group-item">
+      <%= link_to "#{business.description}" , business, class: "lead pull-right" %>
+      <%= image_tag(business.picture, size: "150x150", class: "img-response") %>
+    </li>
 
-<p>
-  <strong>Contactfirstname:</strong>
-  <%= @school.contactFirstName %>
-</p>
+<% end %>
+</ul>
 
-<p>
-  <strong>Contactlastname:</strong>
-  <%= @school.contactLastName %>
-</p>
 
-<p>
-  <strong>Contactemail:</strong>
-  <%= @school.contactEmail %>
-</p>
-
-<p>
-  <strong>School Code:</strong>
-  <%= @school.school_code %>
-</p>
-
-<%= link_to 'Edit', edit_school_path(@school) %> |
-<%= link_to 'Back', schools_path %>

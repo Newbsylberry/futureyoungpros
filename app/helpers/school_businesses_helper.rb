@@ -1,0 +1,2 @@
+module SchoolBusinessesHelper
+end

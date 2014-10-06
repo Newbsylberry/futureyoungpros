@@ -2,6 +2,8 @@ Jobshadow::Application.routes.draw do
     
   
 
+  resources :school_businesses
+
   resources :job_site_applications
 
   resources :matches

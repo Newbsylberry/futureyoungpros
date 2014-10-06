@@ -1,5 +1,6 @@
 class SchoolsController < ApplicationController
   before_action :set_school, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_admin!, :show
 
   # GET /schools
   # GET /schools.json
@@ -10,6 +11,7 @@ class SchoolsController < ApplicationController
   # GET /schools/1
   # GET /schools/1.json
   def show
+    @school_business = SchoolBusiness.new
   end
 
   # GET /schools/new

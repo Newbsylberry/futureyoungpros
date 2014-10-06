@@ -1,6 +1,6 @@
 <%= form_for(@job_site_application) do |f| %>
     <% if @job_site_application.errors.any? %>
-        <div id="error_explanation">
+        <div id="error_explanation" xmlns="http://www.w3.org/1999/html">
           <h2><%= pluralize(@job_site_application.errors.count, "error") %> prohibited this job_site_application from being saved:</h2>
 
           <ul>
@@ -30,6 +30,15 @@
       <%= f.label :last_name %><br>
       <%= f.text_field :last_name %>
     </div>
+    <div class="field">
+      <strong>Why do you want to work here?</strong>
+      <textarea rows="10" cols="50"></textarea>
+    </div>
+    <div class="field">
+      <strong>What are some important goals you have?</strong>
+      <textarea rows="10" cols="50"></textarea>
+    </div>
+
     <div class="actions">
       <%= f.submit %>
     </div>

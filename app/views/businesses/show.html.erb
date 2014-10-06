@@ -1,34 +1,14 @@
 <p id="notice"><%= notice %></p>
 <div class="col-xs-6">
-  <p>
-    <strong>Name:</strong>
-    <%= @business.name %>
-  </p>
-  <p>
-    <strong>Address1:</strong>
-    <%= @business.address1 %>
-  </p>
-  <p>
-    <strong>Address2:</strong>
-    <%= @business.address2 %>
-  </p>
-  <p>
-    <strong>City:</strong>
-    <%= @business.city %>
-  </p>
-  <p>
-    <strong>State:</strong>
-    <%= @business.state %>
-  </p>
-  <p>
-    <strong>Zip:</strong>
-    <%= @business.zip %>
-  </p>
-  <p>
-    <strong>Phone:</strong>
-    <%= @business.phone %>
-  </p>
+  <%= image_tag(@business.picture, size: "250x250", class: "img img-rounded") %>
+    <h1><%= @business.name %></h1>
+    <p class="lead"><%= @business.description %></p>
+
+
+
 </div>
+
+
 <div class="col-xs-6">
 <% if @business.job_site? and current_user.nil? %>
     <h1>Apply to <%= @business.name %></h1>
@@ -38,11 +18,12 @@
       <% @business.job_site_applications.each do |application| %>
           <h3><%= link_to "#{application.first_name} #{application.last_name}'s Application", application %> <br></h3>
       <% end %>
+      <%= link_to 'Edit', edit_business_path(@business) %> |
+      <%= link_to 'Back to Admin Home', welcome_admin_path %>
   <% end %>
 
 
 
 
-<%= link_to 'Edit', edit_business_path(@business) %> |
-<%= link_to 'Back to Admin Home', welcome_admin_path %>
+
 </div>

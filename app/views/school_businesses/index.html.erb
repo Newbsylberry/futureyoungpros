@@ -1,0 +1,29 @@
+<h1>Listing school_businesses</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>School</th>
+      <th>Business</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @school_businesses.each do |school_business| %>
+      <tr>
+        <td><%= school_business.school_id %></td>
+        <td><%= school_business.business_id %></td>
+        <td><%= link_to 'Show', school_business %></td>
+        <td><%= link_to 'Edit', edit_school_business_path(school_business) %></td>
+        <td><%= link_to 'Destroy', school_business, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New School business', new_school_business_path %>
