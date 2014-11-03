@@ -36,21 +36,41 @@
       <strong>Contactemail:</strong>
       <%= @school.contactEmail %>
     </p>
-    <p>
-      <strong>School Code:</strong>
-      <%= @school.school_code %>
-    </p>
 
-    <%= form_for @school_business do |business| %>
-        <%= business.hidden_field :school_id, value: @school.id %>
+    <!-- <%#= form_for @school_business do |business| %>
+        <%#= business.hidden_field :school_id, value: @school.id %>
         <div class="form-group">
-          <%= business.label :business_id,"Add Business Site for School:" %><br>
-          <%= collection_select(:school_business, :business_id, Business.all, :id, :name) %>
+          <%#= business.label :business_id,"Add Business Site for School:" %><br>
+          <%#= collection_select(:school_business, :business_id, Business.all, :id, :name) %>
+        </div>
+        <%#= business.submit %>
+    <%# end %> -->
+
+     <%= form_for @school_class do |school_class| %>
+    <%= school_class.hidden_field :school_id, value: @school.id %>
+        <div class="form-group">
+          <%= school_class.label :contact_first_name,"Class Contact First Name" %><br>
+          <%= school_class.text_field :contact_first_name %>
+        </div>
+        <div class="form-group">
+          <%= school_class.label :contact_last_name,"Class Contact Last Name" %><br>
+          <%= school_class.text_field :contact_last_name %>
+        </div>
+        <div class="form-group">
+          <%= school_class.label :contact_email,"Class Contact Email" %><br>
+          <%= school_class.text_field :contact_email %>
+        </div>
+        <div class="form-group">
+          <%= school_class.label :business_id,"Add Business Site for School:" %><br>
+          <%= collection_select(:school_class, :business_id, Business.all, :id, :name) %>
+        </div>
+        <div class="form-group">
+          <%= school_class.label :size,"Number of Students in Class:" %><br>
+          <%= school_class.number_field :size  %>
         </div>
 
-        <%= business.submit %>
+        <%= school_class.submit %>
     <% end %>
-
 
 
     <%= link_to 'Edit', edit_school_path(@school) %> |

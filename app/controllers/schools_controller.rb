@@ -12,6 +12,7 @@ class SchoolsController < ApplicationController
   # GET /schools/1.json
   def show
     @school_business = SchoolBusiness.new
+    @school_class = SchoolClass.new
   end
 
   # GET /schools/new

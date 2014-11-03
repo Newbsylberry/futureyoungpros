@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141006045804) do
+ActiveRecord::Schema.define(version: 20141102014146) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -46,6 +46,8 @@ ActiveRecord::Schema.define(version: 20141006045804) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "school_code"
+    t.integer  "student_id"
+    t.integer  "school_class_id"
   end
 
   create_table "matches", force: true do |t|
@@ -79,6 +81,17 @@ ActiveRecord::Schema.define(version: 20141006045804) do
     t.datetime "updated_at"
   end
 
+  create_table "school_classes", force: true do |t|
+    t.integer  "school_id"
+    t.integer  "size"
+    t.integer  "business_id"
+    t.string   "contact_email"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "contact_first_name"
+    t.string   "contact_last_name"
+  end
+
   create_table "schools", force: true do |t|
     t.string   "name"
     t.string   "address1"
@@ -92,7 +105,6 @@ ActiveRecord::Schema.define(version: 20141006045804) do
     t.integer  "school_district_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "school_code"
     t.string   "picture"
   end
 

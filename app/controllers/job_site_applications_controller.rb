@@ -74,6 +74,6 @@ class JobSiteApplicationsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_site_application_params
       params.require(:job_site_application).permit(:business_id, :school_id, :first_name,
-                                                   :last_name, :school_code)
+                                                   :last_name, :school_class_id)
     end
 end
