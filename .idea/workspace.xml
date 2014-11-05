@@ -2,20 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0a64c19-05ed-4640-94c7-8e4533d1da61" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/jquery.fullPage.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/jquery.fullPage.min.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/40B_Logo.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/schools.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/schools.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jobshadow.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415144641133" ignored="false" />
+    <file path="/Dummy.txt" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415217455542" ignored="false" />
     <file path="$PROJECT_DIR$/../riskapp/app/controllers/risks_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1398962697248" ignored="false" />
     <file path="/risks_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1398962673359" ignored="false" />
     <file path="$PROJECT_DIR$/../riskapp/db/schema.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1398961410620" ignored="false" />
@@ -268,7 +260,7 @@
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/horizontal_parallax.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415054743398" ignored="false" />
     <file path="/application.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415210024848" ignored="false" />
     <file path="/home.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415215792513" ignored="false" />
-    <file path="/home.css.less" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415215869875" ignored="false" />
+    <file path="/home.css.less" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415217532932" ignored="false" />
     <file path="/dummy.xml" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415215159772" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -301,7 +293,7 @@
       <file leaf-file-name="home.css.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="14" selection-start="416" selection-end="419" vertical-scroll-proportion="0.8530806">
+            <state line="132" column="14" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.7393365">
               <folding />
             </state>
           </provider>
@@ -310,10 +302,8 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="29" selection-start="512" selection-end="512" vertical-scroll-proportion="-6.875">
-              <folding>
-                <element signature="n#style#0;n#button#0;n#div#1;n#div#3;n#div#3;n#div#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="11" column="29" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -356,8 +346,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="28" />
-    <option name="y" value="31" />
+    <option name="x" value="82" />
+    <option name="y" value="76" />
     <option name="width" value="1328" />
     <option name="height" value="758" />
   </component>
@@ -387,6 +377,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -407,8 +399,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -699,14 +689,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="28" y="31" width="1328" height="758" extended-state="0" />
+    <frame x="82" y="76" width="1328" height="758" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29563183" sideWeight="0.60554373" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3049922" sideWeight="0.60554373" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -810,9 +800,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery.fullPage.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
@@ -837,16 +825,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="3" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.8860544">
-          <folding />
-        </state>
+        <state line="65" column="3" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.8860544" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/about.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="52" selection-start="884" selection-end="988" vertical-scroll-proportion="0.51724136">
-          <folding />
-        </state>
+        <state line="19" column="52" selection-start="884" selection-end="988" vertical-scroll-proportion="0.51724136" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/schools.html.erb">
@@ -865,16 +849,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="29" selection-start="512" selection-end="512" vertical-scroll-proportion="-6.875">
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#3;n#div#3;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="11" column="29" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="14" selection-start="416" selection-end="419" vertical-scroll-proportion="0.8530806">
+        <state line="132" column="14" selection-start="1676" selection-end="1676" vertical-scroll-proportion="0.7393365">
           <folding />
         </state>
       </provider>
