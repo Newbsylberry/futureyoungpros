@@ -12,18 +12,21 @@
 //
 //= require turbolinks
 //= require jquery
-//= require jquery_ujs
+//= require jquery.easings.min.js
+//= require jquery.slimscroll.min.js
+//= require jquery.fullPage.min.js
 //= require bootstrap
 
-function remove_fields(link) {
-        $(link).prev("input[type=hidden]").val("1");
-        $(link).closest(".fields").hide();
-}
-
-function add_fields(link, association, content) {
-        var new_id = new Date().getTime();
-        var regexp = new RegExp("new_" + association, "g");
-        $(link).parent().before(content.replace(regexp, new_id));
-}
+$(document).ready(function() {
+    $('#fullpage').fullpage({
+        menu: '#menu',
+        anchors:['homeSlide', 'aboutSlide', 'schoolsSlide', 'businessesSlide'],
+        easing: 'easeInQuart',
+        easingcss3: 'ease',
+        fixedElements: '#header, .buttons',
+        loopBottom: true,
+        loopTop: true
+    });
+});
 
   

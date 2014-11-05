@@ -1,35 +1,143 @@
-<% if flash[:notice] %>
-  <p id="notice"><%= notice %></p>
-<% end %>
-<% @title = "Home" %>
-<%= render 'layouts/carousel' %>
+<div id="fullpage" class="fullpage-wrapper">
+  <ul id="menu">
+    <p id="header-text"
+    >Job Shadow Syracuse</p>
+    <div id="menu-links">
+      <li data-menuanchor="homeSlide"><a href="#homeSlide">Home</a></li>
+      <li data-menuanchor="aboutSlide" ><a href="#aboutSlide">About</a></li>
+      <li data-menuanchor="schoolsSlide"><a href="#schoolsSlide">Schools</a></li>
+      <li data-menuanchor="businessesSlide"><a href="#businessesSlide">Businesses</a></li>
+    </div>
+  </ul>
+    <a href='' id="event-link">Come to the Job Shadow Syracuse Expo</a>
+  <div class="section" id="home" data-anchor="homeSlide">
+    <div id="greeting-text">
+      <div class="col-xs-6 col-sm-offset-3" id="home_container">
+        <div class="col-xs-6">
+          <p class="lead copy-text">
+            Job Shadow Syracuse is a collaborative effort to connect high school students
+            with businesses and organizations in Syracuse, NY.
 
-<!-- <div class="thumbnails-row">
-<div class="row">
-  <div class="col-xs-6 col-sm-4 col-lg-4">
-    <%= link_to image_tag("thumbnail1.jpg"), new_user_registration_path, class: "thumbnail" %>
-        <div class="caption">
-	  <h3>What is Future Young Pros?</h3>
-	  <p>Future Young Pros is a program that connects K-12 Students with
-	    the professional community through job shadowing opportunities</p>
-	</div>
-  </div>
-  <div class="col-xs-6 col-sm-4 col-lg-4">
-    <%= link_to image_tag("thumbnail2.jpg"), professionals_path, class: "thumbnail" %>
-      <div class="caption">
-	<h3>Further Your Professional Goals:</h3>
-	<p>Beyond the reward of giving back to the community, participating in the FutureYoungPros 
-	  helps you perform your job better.</p>
+          </p>
+        </div>
+        <div class="col-xs-6">
+          <%= image_tag("40B_logo.jpeg", :width => "75%",
+                        :height => "75%", :class => "img-rounded home-logo") %>
+        </div>
       </div>
+    </div>
   </div>
-  <div class="col-xs-6 col-sm-4 col-lg-4">
-    <%= link_to image_tag("thumbnail3.jpg"), businesses_path, class: "thumbnail" %>
-    <div class="caption">
-	<h3>Get Your Business Involved:</h3>
-	<p>Coordinate a Job Shadow Day at your office and receive free advertising on
-	  FutureYoungPros.com</p>
+  <div class="section" id="about"data-anchor="aboutSlide">
+    <div class="col-xs-8 col-sm-offset-2" id="about_container">
+      <div class="col-xs-3">
+        <%= image_tag("in-class-1.png", :width => "50%",
+                      :height => "50%", :class => "img-rounded, about-img") %>
+        <p class="about-text">
+          Through the Junior Achievement Job Shadow program in their high school, students
+          participate in an introductory class teaching them the seven steps
+          to get hired and succeed.
+
+        </p>
       </div>
+      <div class="col-xs-3">
+        <%= image_tag("apply-online.png", :width => "50%",
+                      :height => "50%", :class => "img-rounded, about-img") %>
+        <p class="about-text">
+          In a second classroom session, students build on the seven steps and analyze different job
+          hunting skills, which are applied through mock interviews and applications.
+        </p>
+      </div>
+      <div class="col-xs-3">
+        <%= image_tag("job-site.png", :width => "50%",
+                      :height => "50%", :class => "img-rounded, about-img") %>
+        <p class="about-text">
+          The students visit a local business and learn about its industry, components, and day to
+          day operations.
+        </p>
+      </div>
+      <div class="col-xs-3">
+        <%= image_tag("thank-you.png", :width => "50%",
+                      :height => "50%", :class => "img-rounded, about-img") %>
+        <p class="about-text">
+          Following their visit students compose a thank you note
+          and construct a career-preparation tool to help them find success
+          in their future .
+        </p>
+      </div>
+    </div>
   </div>
-</div>
-</div>
--->
+  <div class="section" data-anchor="schoolsSlide" id="school-section">
+
+
+    <div class="col-xs-8 col-sm-offset-2" id="schools-container">
+
+      <p class="schools-text">
+        Our past and present school partners include:
+      </p>
+      <br>
+      <div class="col-xs-5">
+        <ul class="schools-block">
+          <li>Fowler High School</li>
+          <li>Corcoran High School</li>
+        </ul>
+      </div>
+      <div class="col-xs-7">
+        <ul class="schools-block">
+          <li>Henninger High School</li>
+          <li>Nottingham High School</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="section" data-anchor="businessesSlide" id="business-section">
+    <div class="slide" id="business-slide-1">
+      <div class="col-xs-6">
+        <p class="business-text">
+          There are many different reasons to participate in Job Shadow Syracuse as a Business beyond
+          being listed as a sponsor.
+        </p>
+      </div>
+      <div class="col-xs-4 col-xs-offset-2">
+        <%= image_tag("business_1.png", :class => "business-image") %>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="col-xs-6">
+        <p class="business-text">
+          Today's high school students are tomorrow's customers and clients,
+          reach them directly by providing a positive impact on their life.
+        </p>
+      </div>
+      <div class="col-xs-4 col-xs-offset-2">
+        <%= image_tag("business_2.png", :class => "business-image") %>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="col-xs-6">
+        <p class="business-text">
+          Show your employees you are committed to their commmunity and willing to go
+          beyond what is required for financial success.
+        </p>
+      </div>
+      <div class="col-xs-4 col-xs-offset-2">
+        <%= image_tag("business_3.png", :class => "business-image") %>
+      </div>
+    </div>
+    <div class="slide">
+        <div class="col-xs-4 col-xs-offset-2">
+        <p class="business-text">
+          With varying levels of commitment, sign up for more information and give an opportunity to students
+          who will remember your contribution the rest of their life.
+        </p>
+        </div>
+      <div class="col-xs-2">
+        <button class="btn btn-primary btn-block"
+        style="margin-top: 75%%;">Sign Up For More Information</button>
+      </div>
+      </div>
+    </div>
+  </div>
+
