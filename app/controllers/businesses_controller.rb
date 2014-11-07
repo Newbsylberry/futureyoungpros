@@ -29,7 +29,8 @@ class BusinessesController < ApplicationController
 
     respond_to do |format|
       if @business.save
-        format.html { redirect_to new_mou_path, notice: 'Business was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Someone will contact you shortly,
+                                                    thanks for expressing interest in Job Shadow Syracuse.' }
         format.json { render action: 'show', status: :created, location: @business }
       else
         format.html { render action: 'new' }
@@ -71,6 +72,6 @@ class BusinessesController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def business_params
       params.require(:business).permit(:name, :address1, :address2, :city, :state, :zip, :phone,
-                                        :job_site, :picture, :description)
+                                        :job_site, :picture, :description, :contact_email)
     end
 end
