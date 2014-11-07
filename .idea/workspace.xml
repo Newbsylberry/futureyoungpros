@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0a64c19-05ed-4640-94c7-8e4533d1da61" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
     </list>
     <ignored path="jobshadow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -259,7 +259,7 @@
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/horizontal_parallax.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415241103243" ignored="false" />
     <file path="/application.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415210024848" ignored="false" />
     <file path="/home.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415335112190" ignored="false" />
-    <file path="/home.css.less" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415334939248" ignored="false" />
+    <file path="/home.css.less" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415339457766" ignored="false" />
     <file path="/dummy.xml" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415215159772" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/views/bing_index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415241103243" ignored="false" />
     <file path="/bing_index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415234256378" ignored="false" />
@@ -299,10 +299,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.css.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="20" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
+            <state line="63" column="25" selection-start="796" selection-end="796" vertical-scroll-proportion="0.4651163">
               <folding />
             </state>
           </provider>
@@ -337,10 +337,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="application_helper.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="37" selection-start="119" selection-end="119" vertical-scroll-proportion="0.08946322">
+            <state line="3" column="37" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -394,10 +394,10 @@
         <option value="$PROJECT_DIR$/app/controllers/businesses_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/businesses/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/businesses/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/businesses.css.less" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
       </list>
     </option>
   </component>
@@ -924,13 +924,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="20" selection-start="197" selection-end="197" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="16" selection-start="201" selection-end="201" vertical-scroll-proportion="-1.875">
@@ -956,7 +949,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="37" selection-start="119" selection-end="119" vertical-scroll-proportion="0.08946322">
+        <state line="3" column="37" selection-start="119" selection-end="119" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="25" selection-start="796" selection-end="796" vertical-scroll-proportion="0.4651163">
           <folding />
         </state>
       </provider>
