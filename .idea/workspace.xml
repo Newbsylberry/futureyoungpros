@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0a64c19-05ed-4640-94c7-8e4533d1da61" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
     </list>
     <ignored path="jobshadow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -307,7 +306,7 @@
       <file leaf-file-name="home.css.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="20" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.6018519">
+            <state line="109" column="13" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.8101852">
               <folding />
             </state>
           </provider>
@@ -961,7 +960,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="20" selection-start="1089" selection-end="1089" vertical-scroll-proportion="0.6018519">
+        <state line="109" column="13" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.8101852">
           <folding />
         </state>
       </provider>
