@@ -4,7 +4,6 @@
     <list default="true" id="a0a64c19-05ed-4640-94c7-8e4533d1da61" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jobshadow.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -260,7 +259,7 @@
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/resources.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415000560900" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/horizontal_parallax.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415241103243" ignored="false" />
     <file path="/application.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415210024848" ignored="false" />
-    <file path="/home.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415837741064" ignored="false" />
+    <file path="/home.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415839184416" ignored="false" />
     <file path="/home.css.less" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415838467513" ignored="false" />
     <file path="/dummy.xml" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415215159772" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/views/bing_index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415241103243" ignored="false" />
@@ -308,7 +307,7 @@
       <file leaf-file-name="home.css.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="174" column="20" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.375">
+            <state line="31" column="12" selection-start="400" selection-end="400" vertical-scroll-proportion="0.5833333">
               <folding />
             </state>
           </provider>
@@ -317,7 +316,7 @@
       <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="43" selection-start="5383" selection-end="5383" vertical-scroll-proportion="-8.125">
+            <state line="20" column="22" selection-start="586" selection-end="586" vertical-scroll-proportion="-12.5">
               <folding>
                 <element signature="n#style#0;n#button#0;n#a#0;n#div#1;n#div#0;n#div#3;n#div#4;n#div#0;n#!!top" expanded="true" />
               </folding>
@@ -953,7 +952,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="43" selection-start="5383" selection-end="5383" vertical-scroll-proportion="-8.125">
+        <state line="20" column="22" selection-start="586" selection-end="586" vertical-scroll-proportion="-12.5">
           <folding>
             <element signature="n#style#0;n#button#0;n#a#0;n#div#1;n#div#0;n#div#3;n#div#4;n#div#0;n#!!top" expanded="true" />
           </folding>
@@ -962,7 +961,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="20" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.375">
+        <state line="31" column="12" selection-start="400" selection-end="400" vertical-scroll-proportion="0.5833333">
           <folding />
         </state>
       </provider>
