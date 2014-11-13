@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a0a64c19-05ed-4640-94c7-8e4533d1da61" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="jobshadow.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415387103510" ignored="false" />
+    <file path="/Dummy.txt" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415834105734" ignored="false" />
     <file path="$PROJECT_DIR$/../riskapp/app/controllers/risks_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1398962697248" ignored="false" />
     <file path="/risks_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1398962673359" ignored="false" />
     <file path="$PROJECT_DIR$/../riskapp/db/schema.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1398961410620" ignored="false" />
@@ -125,13 +126,13 @@
     <file path="$PROJECT_DIR$/../chronicleMe_api/app/mailers/community_mailer.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413748038200" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/app/serializers/community_serializer.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413748038200" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/home.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413748038200" ignored="false" />
-    <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/views/volunteer_home.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413982715283" ignored="false" />
-    <file path="/volunteer_home.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413982714647" ignored="false" />
+    <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/views/volunteer_home.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415483779561" ignored="false" />
+    <file path="/volunteer_home.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415483775165" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/updateProfile.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415000578607" ignored="false" />
     <file path="/updateProfile.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413749388286" ignored="false" />
     <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/scripts/controllers/volunteerhome.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413982519937" ignored="false" />
     <file path="/volunteerhome.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413944601482" ignored="false" />
-    <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413948979383" ignored="false" />
+    <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415480738822" ignored="false" />
     <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/scripts/app.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413949204530" ignored="false" />
     <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/views/organization_home.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413948556979" ignored="false" />
     <file path="/organization_home.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413948545357" ignored="false" />
@@ -144,7 +145,7 @@
     <file path="$PROJECT_DIR$/../voluntr_api/config/routes.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413922836798" ignored="false" />
     <file path="$PROJECT_DIR$/../voluntr_api/app/controllers/events_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413923589531" ignored="false" />
     <file path="/events_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413923588870" ignored="false" />
-    <file path="/index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414730749546" ignored="false" />
+    <file path="/index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415480730162" ignored="false" />
     <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/styles/landing_page.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413924737507" ignored="false" />
     <file path="/landing_page.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413924735773" ignored="false" />
     <file path="/landing_page_initial.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1413924986650" ignored="false" />
@@ -169,7 +170,7 @@
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/views/show_post.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415215988128" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/styles/header.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414882004134" ignored="false" />
     <file path="/header.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414874137399" ignored="false" />
-    <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/.tmp/styles/post.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415121117977" ignored="false" />
+    <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/.tmp/styles/post.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415394213970" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/.tmp/styles/main.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415236001479" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/.tmp/styles/footer.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414867307250" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/.tmp/styles/header.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414714401221" ignored="false" />
@@ -181,7 +182,7 @@
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/styles/main.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414767068301" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/views/partials/side_navigation.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415206411695" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/views/partials/home_recent_activity.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414714547052" ignored="false" />
-    <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/views/partials/post.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415206752363" ignored="false" />
+    <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/views/partials/post.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415394487859" ignored="false" />
     <file path="/side_navigation.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415206410108" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/styles/side-menu.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414782476860" ignored="false" />
     <file path="/side-menu.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414774141355" ignored="false" />
@@ -212,8 +213,8 @@
     <file path="/communities_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415001149902" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/app/controllers/community_users_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415111756149" ignored="false" />
     <file path="/community_users_controller.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415111116637" ignored="false" />
-    <file path="/post.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415206752363" ignored="false" />
-    <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/styles/post.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415206060788" ignored="false" />
+    <file path="/post.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415394464442" ignored="false" />
+    <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/styles/post.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415395581642" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/communityjoinrequests.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414782476860" ignored="false" />
     <file path="/landing_page.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414782770328" ignored="false" />
     <file path="/resources.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415200488304" ignored="false" />
@@ -221,7 +222,7 @@
     <file path="/partner_created_email.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414785565105" ignored="false" />
     <file path="/registration_email.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414785787250" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/app/views/community_mailer/community_created_email.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414787143193" ignored="false" />
-    <file path="/post.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415205596108" ignored="false" />
+    <file path="/post.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415395373577" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/.tmp/styles/landingPageScreen2.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414867307250" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/.tmp/styles/landingPageScreen4.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1414867307250" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/styles/landingPageParallax.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415126055728" ignored="false" />
@@ -259,8 +260,8 @@
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/resources.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415000560900" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/scripts/controllers/horizontal_parallax.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415241103243" ignored="false" />
     <file path="/application.js" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415210024848" ignored="false" />
-    <file path="/home.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415387128366" ignored="false" />
-    <file path="/home.css.less" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415340365102" ignored="false" />
+    <file path="/home.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415837741064" ignored="false" />
+    <file path="/home.css.less" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415838467513" ignored="false" />
     <file path="/dummy.xml" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415215159772" ignored="false" />
     <file path="$PROJECT_DIR$/../chronicleMe_api/frontend/app/views/bing_index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415241103243" ignored="false" />
     <file path="/bing_index.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415234256378" ignored="false" />
@@ -272,6 +273,10 @@
     <file path="/new.html.erb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415333104083" ignored="false" />
     <file path="/businesses.css.less" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415337068776" ignored="false" />
     <file path="/application_helper.rb" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415339090073" ignored="false" />
+    <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/views/landing_page_organizations.html" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415480770681" ignored="false" />
+    <file path="$PROJECT_DIR$/../voluntr_api/front_end/app/styles/volunteer_home.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415481207838" ignored="false" />
+    <file path="/volunteer_home.scss" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415481153803" ignored="false" />
+    <file path="$PROJECT_DIR$/../voluntr_api/front_end/.tmp/styles/volunteer_home.css" changelist="a0a64c19-05ed-4640-94c7-8e4533d1da61" time="1415480937074" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -294,26 +299,28 @@
       <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/businesses/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
+            <state line="2" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="-1.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css.less" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="home.css.less" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="63" column="25" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
+            <state line="174" column="20" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.375">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.html.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="home.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="35" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.61374795">
-              <folding />
+            <state line="141" column="43" selection-start="5383" selection-end="5383" vertical-scroll-proportion="-8.125">
+              <folding>
+                <element signature="n#style#0;n#button#0;n#a#0;n#div#1;n#div#0;n#div#3;n#div#4;n#div#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -376,15 +383,15 @@
         <option value="$PROJECT_DIR$/app/views/businesses/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/businesses.css.less" />
         <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/home.css.less" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="59" />
-    <option name="y" value="30" />
+    <option name="x" value="43" />
+    <option name="y" value="28" />
     <option name="width" value="1372" />
     <option name="height" value="796" />
   </component>
@@ -414,8 +421,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -462,7 +469,29 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobshadow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jobshadow" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -473,12 +502,12 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="recentsLimit" value="5" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../issheintome" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -758,14 +787,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="59" y="30" width="1372" height="796" extended-state="0" />
+    <frame x="43" y="28" width="1372" height="796" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36048266" sideWeight="0.60554373" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.36651585" sideWeight="0.60554373" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -879,21 +908,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="21" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.2820513">
-          <folding />
-        </state>
+        <state line="28" column="21" selection-start="1073" selection-end="1073" vertical-scroll-proportion="0.2820513" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/businesses_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="105" selection-start="870" selection-end="870" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/businesses/new.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -912,18 +932,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="25" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="11" selection-start="724" selection-end="724" vertical-scroll-proportion="0.3846154">
-          <folding />
-        </state>
+        <state line="16" column="11" selection-start="724" selection-end="724" vertical-scroll-proportion="0.3846154" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/businesses.css.less">
@@ -933,9 +944,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/businesses/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="24" selection-start="110" selection-end="110" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/static_pages/home.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="35" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.61374795">
+        <state line="141" column="43" selection-start="5383" selection-end="5383" vertical-scroll-proportion="-8.125">
+          <folding>
+            <element signature="n#style#0;n#button#0;n#a#0;n#div#1;n#div#0;n#div#3;n#div#4;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/home.css.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="20" selection-start="2743" selection-end="2743" vertical-scroll-proportion="0.375">
           <folding />
         </state>
       </provider>
